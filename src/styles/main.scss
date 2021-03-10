@@ -1,4 +1,12 @@
 @import '_landingPage.scss';
+@import '_pageScroll.scss';
+@import '_mouse.scss';
+
+@font-face{
+  font-family: Atkinson-Hyperlegible-Regular-102;
+  src: url(fonts/Atkinson-Hyperlegible-Regular-102.ttf);
+}
+
 
 body{
   margin: 0;
