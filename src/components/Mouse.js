@@ -5,17 +5,21 @@ function Mouse() {
   const [xValue, setXvalue] = React.useState(0)
   const [yValue, setYvalue] = React.useState(0)
 
-  const parallax = (e) => {
-    setXvalue(e.clientX)
-    setYvalue(e.clientY)
-  }
+  React.useEffect(() => {
+    const parallax = (e) => {
+      setXvalue(e.clientX)
+      setYvalue(e.clientY)
+    }
 
-  window.addEventListener('mousemove', parallax)
+    window.addEventListener('mousemove', parallax)
+
+  }, [])
+  
 
   return (
 
     <>
-      <header className="body">
+      <header className="main-body">
         <div className="container1">
           <div className="details">
             <div className="logo-wrapper">
