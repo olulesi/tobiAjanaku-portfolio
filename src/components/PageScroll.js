@@ -50,7 +50,7 @@ function PageScroll() {
                     typing ?
                       <div>
                         <Typical
-                          steps={['Hi there,', 1000, 'Welcome to my Construction Page.', 1000, 'Portfolio is on the way this is just a litte promo.', 1000, 'Scroll Down.']}
+                          steps={['', 500, 'Hi there,', 1000, 'Welcome to my Construction Page.', 1000, 'Portfolio is on the way this is just a litte promo.', 1000, 'Scroll Down.']}
                           wrapper="p" 
                         />
                       </div>
