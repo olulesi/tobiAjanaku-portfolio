@@ -45,12 +45,12 @@ function Mouse() {
               </p>
             </div>
           </div>
-          <div className="img1 img" style={{ backgroundImage: `url(${tog})`, 'transform': `translateX(${(xValue * -9) / 250}px) translateY(${(yValue * -9) / 250}px)` }}></div>
-          <div className="img2 img" style={{ backgroundImage: `url(${hand})`,'transform': `translateX(${(xValue * 9) / 250}px) translateY(${(yValue * 9) / 250}px)` }}></div>
-          <div className="img3 img" style={{ backgroundImage: `url(${pod})`,'transform': `translateX(${(xValue * 4) / 250}px) translateY(${(yValue * 4) / 250}px)` }}></div>
-          <div className="img4 img" style={{ backgroundImage: `url(${garden})`, 'transform': `translateX(${(xValue * -6) / 250}px) translateY(${(yValue * -6) / 250}px)` }}></div>
-          <div className="img5 img" style={{ backgroundImage: `url(${fire})`, 'transform': `translateX(${(xValue * 8) / 250}px) translateY(${(yValue * 8) / 250}px)` }}></div>
-          <div className="img6 img" style={{ backgroundImage: `url(${dam})`, 'transform': `translateX(${(xValue * -4) / 250}px) translateY(${(yValue * -4) / 250}px)` }}></div>
+          <div className="img1 img" style={{ backgroundImage: `url(${tog})`, 'transform': `translateX(${(xValue * 19) / 250}px) translateY(${(yValue * 19) / 250}px)` }}></div>
+          <div className="img2 img" style={{ backgroundImage: `url(${hand})`,'transform': `translateX(${(xValue * 19) / 250}px) translateY(${(yValue * 19) / 250}px)` }}></div>
+          <div className="img3 img" style={{ backgroundImage: `url(${pod})`,'transform': `translateX(${(xValue * 44) / 250}px) translateY(${(yValue * 28) / 250}px)` }}></div>
+          <div className="img4 img" style={{ backgroundImage: `url(${garden})`, 'transform': `translateX(${(xValue * 36) / 250}px) translateY(${(yValue * 36) / 250}px)` }}></div>
+          <div className="img5 img" style={{ backgroundImage: `url(${fire})`, 'transform': `translateX(${(xValue * 28) / 250}px) translateY(${(yValue * 28) / 250}px)` }}></div>
+          <div className="img6 img" style={{ backgroundImage: `url(${dam})`, 'transform': `translateX(${(xValue * 44) / 250}px) translateY(${(yValue * 44) / 250}px)` }}></div>
         </div>
       </header>
     </>

@@ -17,8 +17,7 @@
 
   .img{
     position: absolute;
-    width: 200px;
-    height: 200px;
+    
     object-fit: cover;
     background: center; 
     background-size: cover;
@@ -48,7 +47,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    // padding-bottom: 50px;
+    padding-bottom: 50px;
     p{
       text-align: center;
       span{
@@ -66,34 +65,47 @@
 
 .img1{
   background-color: orange;
-  left: 75%;
-  top: 15%;
-  
+  left: 54%;
+  top: -4%;
+  width: 300px;
+  height: 300px;
 
 }
 .img2{
   background-color: blue;
-  top: 75%;
-  left: 45%;
+  top: 56%;
+  left: 55%;
+  width: 330px;
+  height: 330px;
 
 }
 .img3{
   background-color: red;
-  top: 55%;
-  left: 25%;
+  top: 68%;
+  left: -19%;
+  width: 350px;
+  height: 300px;
 }
 .img4{
   background-color: pink;
-  top: 55%;
+  top: 23%;
   left: 55%;
+  width: 350px;
+  height: 300px;
 }
 .img5{
   background-color: green;
-  top: 25%;
-  left: 25%;
+  top: 30%;
+  left: 2%;
+  width: 330px;
+  height: 330px;
+  z-index: 2;
 }
 .img6{
   background-color: turquoise;
-  top: 5%;
-  left: 5%;
+  top: -2%;
+  left: -10%;
+  width: 300px;
+  height: 320px;
+
 }
