@@ -3,6 +3,7 @@ import React from 'react'
 import IntroSpinner from './IntroSpinner'
 import FinalPage from './FinalPage'
 import AboutMe from './AboutMe'
+import Bubbles from './Bubbles'
 import 'react-typist/dist/Typist.css'
 
 // import tb from '../images/tb2.png'
@@ -11,13 +12,13 @@ import 'react-typist/dist/Typist.css'
 
 function PageScroll() {
 
-  const [scrollValue, setScrollValue] = React.useState(0)
-  const [slideValue, setSlideValue] = React.useState(0)
+  // const [scrollValue, setScrollValue] = React.useState(0)
+  // const [slideValue, setSlideValue] = React.useState(0)
   const [loading, setLoading] = React.useState(false)
   // const [typing, setTyping] = React.useState(true)
-  const [logoSlide, setLogoSlide] = React.useState(false)
+  // const [logoSlide, setLogoSlide] = React.useState(false)
   // const [blackSlide, setBlackSlide] = React.useState(false)
-  const [logoValue, setLogoValue] = React.useState(0)
+  // const [logoValue, setLogoValue] = React.useState(0)
 
 
 
@@ -29,24 +30,24 @@ function PageScroll() {
     setTimeout(() => {
       setLoading(false)
     }, 4000)
-    const handleIsScrolling = () => {
+    // const handleIsScrolling = () => {
 
-      window.scrollY <= 100 ? setScrollValue(window.scrollY) : setScrollValue(100)
+    //   window.scrollY <= 100 ? setScrollValue(window.scrollY) : setScrollValue(100)
 
-      setSlideValue(window.scrollY)
+    //   setSlideValue(window.scrollY)
 
-      window.scrollY >= 180 ? setLogoSlide(true) : setLogoSlide(false)
+    //   window.scrollY >= 180 ? setLogoSlide(true) : setLogoSlide(false)
 
-      // window.scrollY > 0 ? setTyping(false) : setTyping(true)
-
-
-      setLogoValue(window.scrollY)
-
-      // window.scrollY >= 690 ? setBlackSlide(true) : setBlackSlide(false)
+    //   // window.scrollY > 0 ? setTyping(false) : setTyping(true)
 
 
-    }
-    window.addEventListener('scroll', handleIsScrolling)
+    //   setLogoValue(window.scrollY)
+
+    //   // window.scrollY >= 690 ? setBlackSlide(true) : setBlackSlide(false)
+
+
+    // }
+    // window.addEventListener('scroll', handleIsScrolling)
 
   }, [])
 
@@ -66,8 +67,9 @@ function PageScroll() {
                     <span className="fullstop">.</span>
                   </div>
                 </div>
+                <Bubbles />
               </div>
-              <h3 className="text" style={{ 'left': `${100 - slideValue / 5}%` }}>Hey There Welcome to My Portfolio</h3>
+              {/* <h3 className="text" style={{ 'left': `${100 - slideValue / 5}%` }}>Hey There Welcome to My Portfolio</h3>
               <>
                 {
                   logoSlide ?
@@ -83,7 +85,8 @@ function PageScroll() {
                     }}>
                     </section>
                 }
-              </>             
+              </>              */}
+
               <AboutMe />
               <div className="container">
                 <FinalPage />
