@@ -14,7 +14,7 @@ function PageScroll() {
 
   // const [scrollValue, setScrollValue] = React.useState(0)
   // const [slideValue, setSlideValue] = React.useState(0)
-  const [loading, setLoading] = React.useState(false)
+  const [loading, setLoading] = React.useState(true)
   // const [typing, setTyping] = React.useState(true)
   // const [logoSlide, setLogoSlide] = React.useState(false)
   // const [blackSlide, setBlackSlide] = React.useState(false)
@@ -25,11 +25,9 @@ function PageScroll() {
 
 
   React.useEffect(() => {
-    setLoading(true)
-    // setTyping(true)
     setTimeout(() => {
       setLoading(false)
-    }, 4000)
+    }, 1000)
     // const handleIsScrolling = () => {
 
     //   window.scrollY <= 100 ? setScrollValue(window.scrollY) : setScrollValue(100)
@@ -60,14 +58,7 @@ function PageScroll() {
             :
             <>
               <div className="typing-page">
-                <div className="scroll">
-                  <div className="name-title">
-                    <span>tobi</span>
-                    <span className="surname">ajanaku</span>
-                    <span className="fullstop">.</span>
-                  </div>
-                </div>
-                <Bubbles />
+                <Bubbles loading={loading} />
               </div>
               {/* <h3 className="text" style={{ 'left': `${100 - slideValue / 5}%` }}>Hey There Welcome to My Portfolio</h3>
               <>
