@@ -55,33 +55,39 @@
 
 // ABOUT ME PAGE
 
-.box-area{
-  width: 100%;
+.black-container{
   background-color: black;
-  position: relative;
-  z-index: -3;
-  overflow: hidden;
+  width: 100%;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  flex-grow: 1;
+}
+
+.section2-wrapper{
+  perspective: 2200px;
+  width: 500px;
+  height: 500px;
+  background-color: red;
+}
+
+.box-area{ 
+  width: 500px;
+  animation: animate 12s linear infinite;
+  transform-style: preserve-3d;
+  background-color: rebeccapurple;
+  &:hover{
+    animation-play-state: paused;
+  }
 
   .category-container{
-    position: relative;
-    width:80%;
-    height: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    position: absolute;
+    height: 500px;
+    width: 500px;
     .category{
+      height: 500px;
+      width: 500px;
       display: flex;
-      flex-grow: 1;
-      background-color: black;
-      width: 100%;
-      height: 100%;
-
       .category-wrapper{
         width: 100%;
         height: 100%;
@@ -137,31 +143,40 @@
 
     }
   }
+  .arch{
+    transform: translateZ(250px);
+    background-color: rebeccapurple;
+  }
+
   .gd{
-    flex-direction: column;
-    flex-grow: 1;
-    .gd-item{
+    transform: rotateY(180deg) translateZ(250px);
+    background-color: yellow;
+    .category{
       display: flex;
-      justify-content: space-around;
-      width: 100%;
-      height: 100%;
-      margin-bottom: 30px;
-      .gd-logo{
-        width: 200px;
-        height: 100px;
-        object-fit: cover;
-        img{ 
-          width: 100%;
-          height: 100%;
-        }
-      }
-      .gd-content{
-        font-family: Atkinson-Hyperlegible-Regular-102;
-        line-height: 1.4em;
-        color: white;
-      }
     }
   }
+  .write{
+    transform: rotateY(-90deg) translateX(-250px);
+    transform-origin: left;
+    background-color: aliceblue;
+  }
+  .art{
+    transform: rotateY(90deg) translateX(250px);
+    transform-origin: right;
+    background-color: burlywood;
+  }
+
+
+  @keyframes animate{
+    0%{
+      transform: rotateY(0);
+    }
+    100%{
+      transform: rotateY(360deg);
+    }
+    
+  }
+
 
   .info-logos{
     display: flex;
