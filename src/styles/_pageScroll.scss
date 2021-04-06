@@ -74,7 +74,7 @@
 
 .box-area{ 
   width: 500px;
-  // animation: animate 12s linear infinite;
+  animation: animate 12s linear infinite;
   transform-style: preserve-3d;
   background-color: black;
   &:hover{
@@ -93,42 +93,7 @@
       flex-direction: column;
       flex-grow: 1;
       overflow: hidden;
-      .udemy-wrapper{
-        display: flex;
-        flex-direction: column;
-        flex-grow: 1;
-        align-items: center;
-        justify-content: center;
-        .gd-content{
-          width: 75%;
-          height: 75%;
-          margin: 0 auto;
-          display: flex;
-          flex-direction: column;
-          color: white;
-          text-align: center;
-          font-family: Atkinson-Hyperlegible-Regular-102;
-          justify-content: flex-start;
-          align-items: center;
-          line-height: 1.4em;
-          font-size: 13px;
-          p{
-            margin-top: 0;
-          }
-        }
-        .gd-logo{
-          object-fit: cover;
-          background: center; 
-          background-size: cover;
-          width: 60%;
-          height: 60%;
-          padding: 30px 0;
-          img{
-            width: 80%;
-            height: 100%;
-          } 
-        }
-      }
+      
       .category-wrapper{
         width: 100%;
         height: 100%;
@@ -136,6 +101,7 @@
         display: flex;
         align-items: center;
         // position: absolute;
+        margin-top: -80px;
         .info{
           display: flex;
           flex-direction: column;
@@ -148,8 +114,7 @@
             height: 100%;
             margin: 0 auto;
             margin-bottom: -130px;
-            margin-left: 65px;
-            margin-top: -50px;
+            margin-left: 50px;
             img{
               width: 100%;
               height: 100%;
@@ -210,18 +175,49 @@
     background-color:black;
   }
 
-  .gd{
+  .write{
     transform: rotateY(180deg) translateZ(250px);
-    background-color: yellow;
+    background-color: black;
     .category{
       .category-wrapper{
+        .info{
+          .info-logo{ 
+            margin-left: 90px;
+          }
+        }
       }
-      .udemy-wrapper{
+      .wordPress-wrapper{
+        width: 100%;
+        display: flex;
+        justify-content: center; 
+        object-fit: cover;
+          background: center; 
+          background-size: cover;
+          margin-bottom: 30px;
+          img{
+            
+            width: 100px;
+            height: 100px;
+          } 
+      }
+    } 
+  }
+  
+  .gd{
+    transform: rotateY(-90deg) translateX(-250px);
+    transform-origin: left;
+    background-color: black;
+    .category{
+      .udemy-wrapper, .fiver-wrapper{
+        margin-top: 30px;
         display: flex;
         flex-direction: column;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        flex-grow: 1;
         .gd-content{
           width: 75%;
-          height: 75%;
           margin: 0 auto;
           display: flex;
           flex-direction: column;
@@ -233,7 +229,7 @@
           line-height: 1.4em;
           font-size: 13px;
           p{
-            margin-top: 0;
+            margin: 10px 0;
           }
         }
         .gd-logo{
@@ -242,24 +238,30 @@
           background-size: cover;
           width: 100%;
           height: 100%;
-          padding: 30px 0;
+          display: flex;
+          justify-content: center;
+          // padding: 30px 0;
           img{
-            width: 100%;
-            height: 100%;
+            width: 100px;
+            height: 100px;
           } 
         }
       }
     }
   }
-  .write{
-    transform: rotateY(-90deg) translateX(-250px);
-    transform-origin: left;
-    background-color: black;
-  }
   .art{
     transform: rotateY(90deg) translateX(250px);
     transform-origin: right;
-    background-color: burlywood;
+    background-color: black;
+    .category{
+      .category-wrapper{
+        .info{
+          .info-logo{ 
+            margin-left: 115px;
+          }
+        }
+      }
+    }
   }
 
 
