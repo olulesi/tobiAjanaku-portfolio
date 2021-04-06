@@ -40,7 +40,7 @@ function Bubbles(loading) {
     <>
       <div className="bubbles">
         <div className="i-message">
-          <div className="logo-wrapper" >
+          <div className="tb-wrapper" >
             <div className="tb-logo" style={{ backgroundImage: `url(${tblogo})` }}>
             </div>
           </div>
@@ -81,8 +81,6 @@ function Bubbles(loading) {
                 <div className="typing-bubble">
                 </div>
             }
-          </div>
-          <div className="dead-weight">
           </div>
         </div>
         <div className="scroll-down"></div>

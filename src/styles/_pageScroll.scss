@@ -195,7 +195,6 @@
           background-size: cover;
           margin-bottom: 30px;
           img{
-            
             width: 100px;
             height: 100px;
           } 
@@ -207,46 +206,18 @@
     transform: rotateY(-90deg) translateX(-250px);
     transform-origin: left;
     background-color: black;
-    .category{
-      .udemy-wrapper, .fiver-wrapper{
-        margin-top: 30px;
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        width: 100%;
-        height: 100%;
-        flex-grow: 1;
-        .gd-content{
-          width: 75%;
-          margin: 0 auto;
-          display: flex;
-          flex-direction: column;
-          color: white;
-          text-align: center;
-          font-family: Atkinson-Hyperlegible-Regular-102;
-          justify-content: flex-start;
-          align-items: center;
-          line-height: 1.4em;
-          font-size: 13px;
-          p{
-            margin: 10px 0;
-          }
-        }
-        .gd-logo{
-          object-fit: cover;
-          background: center; 
-          background-size: cover;
-          width: 100%;
-          height: 100%;
-          display: flex;
-          justify-content: center;
-          // padding: 30px 0;
-          img{
-            width: 100px;
-            height: 100px;
-          } 
-        }
-      }
+    .fiver-wrapper{
+      width: 100%;
+      display: flex;
+      justify-content: center; 
+      object-fit: cover;
+        background: center; 
+        background-size: cover;
+        margin-bottom: 30px;
+        img{
+          width: 100px;
+          height: 100px;
+        } 
     }
   }
   .art{
