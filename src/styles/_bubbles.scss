@@ -55,7 +55,6 @@
   padding-bottom: 190px;
   .typing-bubble{
     width: 115px;
-    height: 75px;
     // margin-top: -90px;
     object-fit: cover;
   background: center; 
@@ -63,8 +62,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  animation: sk-bouncedelay .5s forwards ease-in-out;
+  position: relative;
     span{
       font-size: 80px;
       color: black;
@@ -75,60 +73,76 @@
   }
 }
 
+.messageIn{
+  animation: .2s forwards expand2;
+  height: 0;
+  position: relative;
+}
+.messageOut{
+  animation: .4s forwards fadeOut;
+  // position: absolute;
+  height: 0px;
+
+}
+
 .line{
   object-fit: cover;
   background: left; 
   background-size: cover;
-  // animation: sk-bouncedelay .3s forwards ease-in-out;
+  transition: 2s;
   position: relative;
-transition: all 1s ease-in-out;
+}
+
+.none{
+  opacity: 0;
 }
 
 .one{
   width: 215px;
   height: 55px;
-  top: 0;
-  top: 2%;
+  animation: .2s forwards expand1;
 }
 .two{
   width: 435px;
   height: 75px;
-  transition: all 1s ease-in-out;
-  top: 3%;
+  animation: .2s forwards expand2;
 }
 .three{
   width: 575px;
   height: 123px;
-  transition: all 1s ease-in-out;
-  top: 3%;
+  animation: .2s forwards expand3;
 }
 .four{
   width: 335px;
   height: 65px;
-  transition: all 1s ease-in-out;
-  top: 3%;
+  animation: .2s forwards expand4;
 }
 .five{
   width: 345px;
   height: 65px;
-  transition: all 1s ease-in-out;
-  top: 2%;
+  animation: .2s forwards expand4;
 }
 
-
-.dead-weight{
-  width: 50%;
-  height: 100%;
+@keyframes expand1 {
+  0% { height: 0; opacity: 0; }
+  10% { height: 0px; opacity: 0;}
+  100% { height: 55px; opacity: 1;}
 }
-
-
-
-
-
-
-
-
-
+@keyframes expand2 {
+  0% { height: 0; }
+  10% { height: 0px;}
+  100% { height: 75px;}
+}
+@keyframes expand3 {
+  0% { height: 0; opacity: 0; }
+  10% { height: 0px; opacity: 0;}
+  100% { height: 123px; opacity: 1;}
+}
+@keyframes expand4 {
+  0% { height: 0; }
+  10% { height: 0px;}
+  100% { height: 65px;}
+}
 
 
 
@@ -179,6 +193,17 @@ transition: all 1s ease-in-out;
   }
   100% {
     opacity: .2;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 

@@ -30,8 +30,8 @@ function Bubbles(loading) {
           console.log(images[messageNo])
           setTimeout(() => {
             setTyping(true)
-          }, 500)
-        }, 1000)
+          }, 800)
+        }, 1500)
     }, [messageNo])
   }
 
@@ -72,13 +72,16 @@ function Bubbles(loading) {
             }
             {
               typing && messageNo < images.length ?
-                <div className="typing-bubble" style={{ backgroundImage: `url(${typingBubble})` }}>
+                <div className="typing-bubble messageIn" style={{ backgroundImage: `url(${typingBubble})` }}>
                   <div className="dot one"></div>
                   <div className="dot two"></div>
                   <div className="dot three"></div>
                 </div>
                 :
-                <div className="typing-bubble">
+                <div className="typing-bubble messageOut" style={{ backgroundImage: `url(${typingBubble})` }}>
+                  {/* <div className="dot one messageOut"></div>
+                  <div className="dot two messageOut"></div>
+                  <div className="dot three messageOut"></div> */}
                 </div>
             }
           </div>
