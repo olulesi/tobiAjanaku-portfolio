@@ -35,8 +35,8 @@ function AboutMe() {
                 </div>
                 <div className="info-wrapper">
                   <div className="info-text">
-                    <p>Student at XJTLU/ graduate of the University of Liverpool specialising in architecture practice.</p>
-                    <p>I am skilled in special programs and design development is a strong interest for me.</p>
+                    <p>Tobi has recently finished his undergraduate degree, in which he studied BA (Hons) Architecture at the University of Liverpool.</p>
+                    <p>He is due to start his Masters in Architecture this coming September in London, with the hope that this continues his pursuit towards accreditation.</p>
                   </div>
                 </div>
               </div>
@@ -58,8 +58,8 @@ function AboutMe() {
               
                 <div className="info-wrapper">
                   <div className="info-text">
-                    <p>Student at XJTLU/ graduate of the University of Liverpool specialising in architecture practice.</p>
-                    <p>I am skilled in special programs and design development is a strong interest for me.</p>
+                    <p>Tobi has been a freelance Graphic Designer for 3+ years. He transitioned his skillset in Architecture to Graphic Design to provide a professional service.</p>
+                    <p>He used the Fiverr platform in creating logo designs, banner designs and animations. Since starting on the platform in October 2020, Tobi has dealt with over 50 clients from all over the world and maintained a 5-star rating.</p>
                   </div>
                 </div>
               </div>
@@ -79,8 +79,8 @@ function AboutMe() {
                 </div>
                 <div className="info-wrapper">
                   <div className="info-text">
-                    <p>Student at XJTLU/ graduate of the University of Liverpool specialising in architecture practice.</p>
-                    <p>I am skilled in special programs and design development is a strong interest for me.</p>
+                    <p>Tobi is known to speak his mind and make it known where he stands in certain situations (respectfully).</p>
+                    <p>In 2018 he started a blog in which he spoke about socio-economic problems that his generation face.</p>
                   </div>
                 </div>
               </div>
@@ -103,8 +103,8 @@ function AboutMe() {
                 </div>
                 <div className="info-wrapper">
                   <div className="info-text">
-                    <p>Student at XJTLU/ graduate of the University of Liverpool specialising in architecture practice.</p>
-                    <p>I am skilled in special programs and design development is a strong interest for me.</p>
+                    <p>Tobi is inspired by multiple types of art, from surrealism to satirical comic drawings, his eye for art is ever-widening.</p>
+                    <p> Recently he has been particularly interested in Pop Art and the capabilities of doing so using geometrical shapes.He also likes to experiment with collages that mix real images as well as hand-drawn pictures.</p>
                   </div>
                 </div>
               </div>

@@ -27,7 +27,7 @@ function PageScroll() {
   React.useEffect(() => {
     setTimeout(() => {
       setLoading(false)
-    }, 1000)
+    }, 8500)
     // const handleIsScrolling = () => {
 
     //   window.scrollY <= 100 ? setScrollValue(window.scrollY) : setScrollValue(100)

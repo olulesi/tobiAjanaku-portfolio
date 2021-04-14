@@ -1,41 +1,86 @@
 import React from 'react'
 
-import dam from '../images/mainImages/Dam.jpg'
-import tog from '../images/mainImages/FemmeFatale.jpg'
-import hand from '../images/mainImages/Hands.jpg'
-import fire from '../images/mainImages/Fire.jpg'
-import pod from '../images/mainImages/Pod.jpg'
-import garden from '../images/mainImages/Garden.jpg'
-import { Swiper, SwiperSlide } from 'swiper/react'
+import damStreet from '../images/mainImages/damStreets.jpeg'
+import tog from '../images/mainImages/femme.jpeg'
+import hand from '../images/mainImages/hand.jpeg'
+import damned from '../images/mainImages/damned.jpeg'
+import pod from '../images/mainImages/interior.jpeg'
+import garden from '../images/mainImages/garden.jpeg'
+
+import tobi from '../images/tobiajanaku.png'
 
 function FinalPage() {
+
+  const [title, setTitle] = React.useState('Hover For Title')
+
+  const galleryImages = [
+    {
+      id: 0,
+      image: tog,
+      title: 'Femme Fetale',
+      subtitle: 'This is an album cover created for TOG',
+    },
+    {
+      id: 1,
+      image: damned,
+      title: 'The Damned',
+      subtitle: 'Another commissioned Album Cover for TOG. The artwork and song were made in collaboration in response to the recent events that took place in Nigeria (ENDSARS)',
+    },
+    {
+      id: 2,
+      image: hand,
+      title: 'Hand On The Moon',
+      subtitle: 'A personal piece that I created in my free time. It combines graphic art with a conventional hand-drawing style',
+    },
+    {
+      id: 3,
+      image: damStreet,
+      title: 'Dam Streets',
+      subtitle: 'Another personal piece that was inspired by my trip to Amsterdam',
+    },
+    {
+      id: 4,
+      image: garden,
+      title: 'Stylistic Collage Render',
+      subtitle: 'This is an external render from one of my design modules. This collage render style shows particular freedom that photorealistic renders can sometimes neglect.',
+    },
+    {
+      id: 5,
+      image: pod,
+      title: 'Prefabricated Room Interiors',
+      subtitle: 'A proposed interior design for a prefabricated room. My focus was minimalism, I wanted to create a space where everything was within touching distance.',
+    }
+  ]
 
   return (
 
     <>
       <section className="finalPage-wrapper">
-        <Swiper
-          direction={'horizontal'}
-          effect={'cube'}
-          grabCursor={ true }
-          onSlideChange={() => console.log('slide change')}
-          onSwiper={(swiper) => console.log(swiper)}
-          pagination={{ clickable: true }}
-        >
-          <SwiperSlide>
-            <div className="container-general">
-              <div className="gallery-wrap wrap-effect-1">
-                <div className="item" style={{ backgroundImage: `url(${tog})` }}></div>
-                <div className="item" style={{ backgroundImage: `url(${fire})` }}></div>
-                <div className="item" style={{ backgroundImage: `url(${hand})` }}></div>
-                <div className="item" style={{ backgroundImage: `url(${dam})` }}></div>
-                <div className="item" style={{ backgroundImage: `url(${garden})` }}></div>
-                <div className="item" style={{ backgroundImage: `url(${pod})` }}></div>
-              </div>
+        <div className="container-general">
+          <div className="brand-title" >
+            <img src={tobi} alt="Brand Logo" />
+          </div>
+          <div className="gallery-title">
+            <div className="gallery-name">
+              <h2>{title.title}</h2>
             </div>
-
-          </SwiperSlide>
-        </Swiper>
+            {/* <div className="gallery-subtitle">
+              <h3>{title.subtitle}</h3>
+            </div> */}
+          </div>
+          <div className="gallery-wrap wrap-effect-1">
+            {galleryImages.map((user) => (
+              <div
+                onMouseEnter={
+                  () => setTitle(galleryImages[user.id])
+                }
+                className="item" key={user.id}
+                style={{
+                  backgroundImage: `url(${user.image})`,
+                }}></div>
+            ))}
+          </div>
+        </div>
       </section>
     </>
   )

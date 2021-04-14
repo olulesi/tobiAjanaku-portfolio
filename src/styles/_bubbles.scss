@@ -11,7 +11,6 @@
   .draft-image{
     width: 75%;
     height: 75%;
-    
     object-fit: cover;
     background: center; 
     background-size: cover;
@@ -25,7 +24,50 @@
   padding-bottom: 50px;
 }
 
+.NavBar{
+  position: fixed;
+  left: 85%;
+  top: 5%;
+  z-index: 3;
+  animation: fadeIn 1.5s;
+  .navBar-wrapper{
+    .navBar-logo{  
+      cursor: pointer; 
+      img{
+        object-fit: cover;
+        height: 70px;
+        // filter: invert(25%);
+      }
+    }
+    .navBar-inverse{  
+      cursor: pointer;
+      top: 30%;
+      img{
+        object-fit: cover;
+        height: 70px;
+        // filter: invert(25%);
+      }
+    }
+    .social{
+      color: white;
+      height: 70px;
+      width: 70px;
+      margin: 15px 0;
+      
+    }
+  }
+}
+.active{
+  animation: .4s forwards fadeIn;
+}
 
+.inactive{
+  animation: .4s forwards fadeOut;
+}
+
+ul{
+  list-style-type: none;
+}
 
 
 .tb-wrapper{
@@ -34,19 +76,21 @@
   align-items: flex-end;
   padding-bottom: 20px;
   width: 50%;
-  height: 100%;
+  animation: fadeUpAndIn 1.5s;
+  // height: 100%;
 }
 
 .tb-logo{
   object-fit: cover;
   background: center; 
   background-size: cover;
-  width: 140px;
-  height: 210px;
-  // margin-right: 100px;
+  width: 220px;
+  height: 214px;
+  margin-right: -50px;
 }
 
 .message-wrapper{
+  animation: fadeUpAndIn 1.5s;
   width: 100%;
   height: 100%;
   display: flex;
@@ -89,7 +133,7 @@
   object-fit: cover;
   background: left; 
   background-size: cover;
-  transition: 2s;
+  transition: 1s;
   position: relative;
 }
 
@@ -143,8 +187,6 @@
   10% { height: 0px;}
   100% { height: 65px;}
 }
-
-
 
     .dot{
       height: 13px;
@@ -206,6 +248,17 @@
     opacity: 0;
   }
 }
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
  
 @keyframes cycleOne{
@@ -251,4 +304,19 @@
   100%{
     background: rgba(150, 150, 150, 1);
   }
+}
+
+@media only screen and (max-width: 799px){
+  
+  
+}
+
+@media only screen and (max-width: 699px){
+  .tb-logo{
+    width: 220px;
+    height: 210px;
+    margin-right: -50px;
+  }
+  
+  
 }

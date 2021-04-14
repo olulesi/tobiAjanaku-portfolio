@@ -1,12 +1,12 @@
 import React from 'react'
 import logo from '../images/logo.png'
 import bkImg from '../images/Desktop.jpg'
-import dam from '../images/mainImages/Dam.jpg'
-import tog from '../images/mainImages/FemmeFatale.jpg'
-import hand from '../images/mainImages/Hands.jpg'
-import fire from '../images/mainImages/Fire.jpg'
-import pod from '../images/mainImages/Pod.jpg'
-import garden from '../images/mainImages/Garden.jpg'
+import dam from '../images/mainImages/damStreets.jpeg'
+import tog from '../images/mainImages/femme.jpeg'
+import hand from '../images/mainImages/hand.jpeg'
+import damned from '../images/mainImages/damned.jpeg'
+import pod from '../images/mainImages/interior.jpeg'
+import garden from '../images/mainImages/garden.jpeg'
 
 function Mouse() {
 
@@ -49,7 +49,7 @@ function Mouse() {
           <div className="img2 img" style={{ backgroundImage: `url(${hand})`,'transform': `translateX(${(xValue * 19) / 250}px) translateY(${(yValue * 19) / 250}px)` }}></div>
           <div className="img3 img" style={{ backgroundImage: `url(${pod})`,'transform': `translateX(${(xValue * 44) / 250}px) translateY(${(yValue * 28) / 250}px)` }}></div>
           <div className="img4 img" style={{ backgroundImage: `url(${garden})`, 'transform': `translateX(${(xValue * 36) / 250}px) translateY(${(yValue * 36) / 250}px)` }}></div>
-          <div className="img5 img" style={{ backgroundImage: `url(${fire})`, 'transform': `translateX(${(xValue * 28) / 250}px) translateY(${(yValue * 28) / 250}px)` }}></div>
+          <div className="img5 img" style={{ backgroundImage: `url(${damned})`, 'transform': `translateX(${(xValue * 28) / 250}px) translateY(${(yValue * 28) / 250}px)` }}></div>
           <div className="img6 img" style={{ backgroundImage: `url(${dam})`, 'transform': `translateX(${(xValue * 44) / 250}px) translateY(${(yValue * 44) / 250}px)` }}></div>
         </div>
       </header>
