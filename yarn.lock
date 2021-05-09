@@ -9366,6 +9366,11 @@ react-parallax-mousemove@^1.1.0:
   resolved "https://registry.yarnpkg.com/react-parallax-mousemove/-/react-parallax-mousemove-1.1.0.tgz#5f6738140cf87ca386f71beaa531397d7ff3d1ad"
   integrity sha1-X2c4FAz4fKOG9xvqpTE5fX/z0a0=
 
+react-parallax-tilt@^1.5.9:
+  version "1.5.9"
+  resolved "https://registry.yarnpkg.com/react-parallax-tilt/-/react-parallax-tilt-1.5.9.tgz#d2440bde3838478c69d6d24f3c2d2637db1fd4a0"
+  integrity sha512-CVKOIt1BGUzHXMd9mnu2WBIeGSWuekm7cUC9pn35sfgYOeePNrGYhUQxw/V+s2Ar6My93AxY+am0tTzV/x6q0A==
+
 react-refresh@^0.8.3:
   version "0.8.3"
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.8.3.tgz#721d4657672d400c5e3c75d063c4a85fb2d5d68f"

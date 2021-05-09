@@ -11,97 +11,99 @@ import line2 from '../images/bubbleImages/line2.png'
 import line3 from '../images/bubbleImages/line3.png'
 import line4 from '../images/bubbleImages/line4.png'
 import line5 from '../images/bubbleImages/line5.png'
-import typingBubble from '../images/bubbleImages/bubbleTyping.png'
+// import typingBubble from '../images/bubbleImages/bubbleTyping.png'
+
+import Tilt from 'react-parallax-tilt'
 
 import TAWhite from '../images/TAwhite.png'
 // import TABlack from '../images/TABlack.png'
 
 
 
-function Bubbles(loading) {
+function Bubbles() {
 
-  const [typing, setTyping] = React.useState(true)
-  const [messageNo, setMessageNo] = React.useState(0)
-
-  const images = ['image1', 'image2', 'image3', 'image4', 'image5']
+  // const [text, setText] = React.useState(false)
 
   const [sideBar, setSideBar] = React.useState(null)
 
   const showSidebar = () => setSideBar(!sideBar)
+
+
+
+
+ 
+
+  // React.useEffect(() => {
+  //   // const handleIsScrolling = () => {
+  //   //   // window.scrollY <= 30 && setText(true)
+  //   // }
+  //   // window.addEventListener('scroll', handleIsScrolling)
+  // }, [messageNo])
 
   // React.useEffect(() => {
   //   setTimeout(() => {
   //     setLoading(false)
   //   }, 1000)
 
-  if (loading) {
-    React.useEffect(() => {
-      messageNo < images.length &&
-        setTimeout(() => {
-          setTyping(false)
-          setMessageNo(messageNo + 1)
-          console.log(images[messageNo])
-          setTimeout(() => {
-            setTyping(true)
-          }, 1000)
-        }, 2500)
-    }, [messageNo])
-  }
+  // if (loading) {
+  //   React.useEffect(() => {
+  //     messageNo < images.length &&
+  //       setTimeout(() => {
+  //         setTyping(false)
+  //         setMessageNo(messageNo + 1)
+  //         console.log(images[messageNo])
+  //         setTimeout(() => {
+  //           setTyping(true)
+  //         }, 1000)
+  //       }, 2500)
+  //   }, [messageNo])
+  // }
 
   return (
 
     <>
       <div className="bubbles">
         <div className="i-message">
-          <div className="tb-wrapper" >
-            <div className="tb-logo" style={{ backgroundImage: `url(${tblogo})` }}>
+          <Tilt options={{ glare: true, scale: 4, max: 50, speed: 400 }}>
+            <div className="section1-wrapper">
+              <div className="tb-wrapper" >
+                <div className="tb-logo" style={{ backgroundImage: `url(${tblogo})` }}>
+                </div>
+              </div>
+              <div className="message-wrapper">
+                <div className="line one" style={{ backgroundImage: `url(${line1})` }}>
+                </div>
+
+                <div className="line two" style={{ backgroundImage: `url(${line2})` }}>
+                </div>
+
+                <div className="line three" style={{ backgroundImage: `url(${line3})` }}>
+                </div>
+
+                <div className="line four" style={{ backgroundImage: `url(${line4})` }}>
+                </div>
+                
+                <div className="line five" style={{ backgroundImage: `url(${line5})` }}>
+                </div>
+                {/* {
+                  typing && messageNo < images.length ?
+                    <div className="typing-bubble messageIn" style={{ backgroundImage: `url(${typingBubble})` }}>
+                      <div className="dot one"></div>
+                      <div className="dot two"></div>
+                      <div className="dot three"></div>
+                    </div>
+                    :
+                    <div className="typing-bubble messageOut" style={{ backgroundImage: `url(${typingBubble})` }}>
+                    </div>
+                } */}
+              </div>
             </div>
-          </div>
-          <div className="message-wrapper">
-            {
-              messageNo > 0 &&
-              <div className="line one" style={{ backgroundImage: `url(${line1})` }}>
-              </div>
-            }
-            {
-              messageNo > 1 &&
-              <div className="line two" style={{ backgroundImage: `url(${line2})` }}>
-              </div>
-            }
-            {
-              messageNo > 2 &&
-              <div className="line three" style={{ backgroundImage: `url(${line3})` }}>
-              </div>
-            }
-            {
-              messageNo > 3 &&
-              <div className="line four" style={{ backgroundImage: `url(${line4})` }}>
-              </div>
-            }
-            {
-              messageNo > 4 &&
-              <div className="line five" style={{ backgroundImage: `url(${line5})` }}>
-              </div>
-            }
-            {
-              typing && messageNo < images.length ?
-                <div className="typing-bubble messageIn" style={{ backgroundImage: `url(${typingBubble})` }}>
-                  <div className="dot one"></div>
-                  <div className="dot two"></div>
-                  <div className="dot three"></div>
-                </div>
-                :
-                <div className="typing-bubble messageOut" style={{ backgroundImage: `url(${typingBubble})` }}>
-                  {/* <div className="dot one messageOut"></div>
-                  <div className="dot two messageOut"></div>
-                  <div className="dot three messageOut"></div> */}
-                </div>
-            }
-          </div>
+          </Tilt>
+
           <div className="NavBar">
             <div className="navBar-wrapper">
               <div className="navBar-logo" onClick={showSidebar}>
-                <img src={TAWhite} alt="Brand Logo"/>
+                <img src={TAWhite} alt="Brand Logo" />
               </div>
               <ul className={sideBar ? 'contact-menu active' : 'contact-menu inactive'} >
                 <li>
