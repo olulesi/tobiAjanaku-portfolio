@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from './Footer'
 
 import damStreet from '../images/mainImages/damStreets.jpeg'
 import tog from '../images/mainImages/femme.jpeg'
@@ -81,6 +82,7 @@ function FinalPage() {
             ))}
           </div>
         </div>
+        <Footer />
       </section>
     </>
   )
