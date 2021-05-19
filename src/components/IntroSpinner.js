@@ -7,7 +7,7 @@ function IntroSpinner() {
 
     <>
       <div className="spinner-container">
-        <img src={MainIntro} style={{ margin: 'auto' }}/>
+        <img src={MainIntro}/>
       </div>
     </>
   )

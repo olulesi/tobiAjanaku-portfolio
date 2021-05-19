@@ -3,6 +3,9 @@
   height: 100%;
   display: flex;
   justify-content: center;
+  img{
+    margin: auto;
+  }
 }
 
 .intro-wrapper{
@@ -13,10 +16,15 @@
 
 @media only screen and (max-width: 699px){
 
+  .intro-wrapper{
+    align-items: flex-start;
+  }
+
   .spinner-container{
     img{
-      width: 300px;
-      height: 169px;
+      width: 375px;
+      height: 225px;
+      margin: 230px auto;
     }
   }
 }

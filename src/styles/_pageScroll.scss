@@ -457,11 +457,13 @@
 @media only screen and (max-width: 699px){
 
   .scroll-down {
-    top: 37%;
+    top: 50%;
+    z-index: 1;
   }
 
   .black-container{
     padding: 50px 0;
+    z-index: 2;
   }
 
   .section2-wrapper{
