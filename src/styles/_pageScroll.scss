@@ -3,14 +3,15 @@
 .body{
   background: black;
   margin: 0;
-  height: 100vh;
+  // height: 100vh;
 }
 .typing-page{
   // height: 883px;
   width: 100%;
-  height: 100vh;
+  // height: 100vh;
   display: flex;
   align-items: center;
+  padding-top: 100px;
   // flex-direction: column;
 }
 
@@ -58,9 +59,9 @@
 // ABOUT ME PAGE
 
 .black-container{
+  padding: 100px 0;
   background-color: black;
   width: 100%;
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -388,7 +389,6 @@
   position: relative;
   background-color:white;
   color:  black;
-  height: 100vh;
   z-index: 1;
   h2{
     font-size: 2.5em;
@@ -456,77 +456,41 @@
 
 @media only screen and (max-width: 699px){
 
-  .typing-page{
+  .black-container{
+    padding: 50px 0;
+  }
+
+  .section2-wrapper{
+    perspective: 2200px;
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    margin-bottom: 75px;
   }
   
   .box-area{ 
-  
+    animation: none;
     .category-container{
+      height: 300px;
+      width: 300px;
       
       .category{
-        
-        
-        .category-wrapper{
-          
-          .info{
-            
-            .info-logo{ 
-              
-              img{
-                
-              }
-            }
-          }
-        }
-        .logo-wrapper{
-          .info-logo{
-            img{
-            } 
-          }
-        }
+        height: 300px;
+        width: 300px;
         .info-wrapper{
           .info-text{
-            p{
-            }
+            font-size: 11px;
           }
       }
   
       }
     }
     .arch{
+      transform: translateZ(125px);
     }
   
-    .write{
-      .category{
-        .category-wrapper{
-          .info{
-            .info-logo{ 
-            }
-          }
-        }
-        .wordPress-wrapper{
-            img{
-            } 
-        }
-      } 
-    }
-    
-    .gd{
-      .fiver-wrapper{
-          img{
-          } 
-      }
-    }
     .art{
-     
-      .category{
-        .category-wrapper{
-          .info{
-            .info-logo{ 
-            }
-          }
-        }
-      }
+      transform: rotateY(90deg) translateX(250px);
     }
   
   
@@ -538,10 +502,6 @@
         transform: rotateY(360deg);
       }
       
-    }
-  
-  
-    .info-logos{
     }
   
     .fade-inLogo{
@@ -559,15 +519,4 @@
       }
     }
   }
-
-  .section2-wrapper{
-  }
-  
-  .box-area{ 
-  }
-  .category-container{
-    .category{
-    }
-  }
-  
 }
