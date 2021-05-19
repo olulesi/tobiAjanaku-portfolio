@@ -394,7 +394,9 @@ ul{
   .tb-wrapper{
     padding-bottom: 100px;
   }
-  
+  .message-wrapper{
+    transform: rotateY(90deg) translateX(350px);  transform-origin: left;
+  }
   .one{
     width: 107.5px;
     height: 27.5px;
