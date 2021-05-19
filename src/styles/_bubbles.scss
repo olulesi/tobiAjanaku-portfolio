@@ -424,5 +424,16 @@ ul{
     animation: float 6s ease-in-out infinite;
   }
 
+  @keyframes messageIntro{
+    0%{
+      transform: rotateY(90deg) translateX(350px) scale3d(0, 0, 0); 
+      opacity: 0;
+    }
+    100%{
+      transform: rotateY(0deg) translateX(0px) scale3d(1, 1, 1);
+      opacity: 1; 
+    }
+    
+  }
   
 }
