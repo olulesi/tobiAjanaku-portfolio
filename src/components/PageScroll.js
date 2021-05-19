@@ -27,7 +27,7 @@ function PageScroll() {
   React.useEffect(() => {
     setTimeout(() => {
       setLoading(false)
-    }, 25500)
+    }, 8500)
     // const handleIsScrolling = () => {
 
     //   window.scrollY <= 100 ? setScrollValue(window.scrollY) : setScrollValue(100)
@@ -54,7 +54,9 @@ function PageScroll() {
       <section className="body">
         {
           loading ?
-            <IntroSpinner loading={loading} />
+            <section className="intro-wrapper">
+              <IntroSpinner loading={loading} />
+            </section>         
             :
             <>
               <div className="typing-page">

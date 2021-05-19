@@ -34,7 +34,7 @@ function Columns() {
         </div>
         <div className="copyright-wrapper">
           <p>Built by 
-            <a href="https://www.fiverr.com/tobilesi?up_rollout=true" target="_blank" rel="noreferrer">
+            <a href="https://www.linkedin.com/in/oluwatobi-lesi/" target="_blank" rel="noreferrer">
               <span className="creator-wrapper">Tobi Lesi</span>
             </a>
              using React © 2021
