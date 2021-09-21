@@ -10,9 +10,14 @@ import garden from '../images/mainImages/garden.jpeg'
 
 import tobi from '../images/tobiajanaku.png'
 
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
 function FinalPage() {
 
   const [title, setTitle] = React.useState('Hover For Title')
+
+  AOS.init()
 
   const galleryImages = [
     {
@@ -58,7 +63,7 @@ function FinalPage() {
     <>
       <section className="finalPage-wrapper">
         <div className="container-general">
-          <div className="brand-title" >
+          <div className="brand-title" data-aos="fade-up">
             <img src={tobi} alt="Brand Logo" />
           </div>
           <div className="gallery-title">
@@ -69,7 +74,7 @@ function FinalPage() {
               <h3>{title.subtitle}</h3>
             </div> */}
           </div>
-          <div className="gallery-wrap wrap-effect-1">
+          <div className="gallery-wrap wrap-effect-1" data-aos="fade-up">
             {galleryImages.map((user) => (
               <div
                 onMouseEnter={

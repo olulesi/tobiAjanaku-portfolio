@@ -3,14 +3,19 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedinIn, faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
-function Columns() {
+
+function Footer() {
+
+  AOS.init()
 
   return (
 
     <>
-      <footer>
-        <div className="chat-message">
+      <footer className="footer-section">
+        <div className="chat-message" data-aos="fade-up" data-aos-delay="50">
           <p>
             I am currently open to Full Time or Freelance opportunities.
           </p>
@@ -37,7 +42,7 @@ function Columns() {
             <a href="https://www.linkedin.com/in/oluwatobi-lesi/" target="_blank" rel="noreferrer">
               <span className="creator-wrapper">Tobi Lesi</span>
             </a>
-             using React © 2021
+            using React © 2021
           </p>
         </div>
 
@@ -47,4 +52,4 @@ function Columns() {
 
 
 }
-export default Columns
+export default Footer

@@ -6,6 +6,7 @@ import AboutMe from './AboutMe'
 import Bubbles from './Bubbles'
 import 'react-typist/dist/Typist.css'
 
+
 // import tb from '../images/tb2.png'
 
 // import Typical from 'react-typical'

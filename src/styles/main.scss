@@ -1,10 +1,11 @@
-@import '_landingPage.scss';
-@import '_pageScroll.scss';
-@import '_mouse.scss';
-@import '_introSpinner.scss';
-@import '_finalPage.scss';
-@import '_bubbles.scss';
-@import '_footer.scss';
+@import '../styles/landingStyles/landingPage.scss';
+@import '../styles/landingStyles/pageScroll.scss';
+@import '../styles/landingStyles/mouse.scss';
+@import '../styles/landingStyles/introSpinner.scss';
+@import '../styles/landingStyles/finalPage.scss';
+@import '../styles/landingStyles/bubbles.scss';
+@import '../styles/landingStyles/footer.scss';
+@import '~bulma/bulma.sass';
 // @import 'aos/dist/aos.css';
 
 @font-face{

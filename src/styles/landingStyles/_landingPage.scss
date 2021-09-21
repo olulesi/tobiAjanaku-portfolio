@@ -1,0 +1,143 @@
+.landing{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  min-height: 100vh;
+  grid-gap: 2rem;
+  div{
+    display: flex;
+    justify-content: center;
+    width: 300px;
+  height: 100%;
+  }
+
+}
+
+.interest-description{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #23232756;
+  color: #fdf6f6;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+  line-height: 1.5em;
+  flex-direction: column;
+}
+
+.interest-description > * {
+  transform: translateY(20px);
+  transition: transform 0.25s;
+}
+
+.interest-description:hover > *{
+  transform: translateY(0);
+}
+
+.interest-description:hover{
+  opacity: 1;
+  transition: 0.5 ease-in-out;
+}
+
+
+.img-container{
+  display: flex;
+  justify-content: center;
+  // width: 300px;
+  // height: 300px;
+  img{
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+  }
+
+  img:hover{
+    transform: scale(1.2);
+    background: rgba(0,0,0,0.6);
+  }
+}
+
+.modals{
+  background: rgba(0,0,0,0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.25s ease-out;
+
+  .full-img{
+    position: absolute;
+    height: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.5);
+    transition: all 0.25s ease-out;
+  }
+
+  .open{
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  p{
+    color: white;
+    font-size: 2rem;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -5%);
+  }
+}
+
+
+
+.open{
+  opacity: 1;
+  pointer-events: all;
+}
+
+
+.contact-form{
+  margin: 100px 0;
+}
+
+.input-animation{
+  // width: 0;
+  transition: all ease-in-out;
+  animation: input 1.2s forwards ease-in-out;
+}
+.emailInput-animation{
+  // width: 0;
+  transition: all ease-in-out;
+  animation: input 1.7s forwards ease-in-out;
+}
+
+.textInput-animation{
+  animation: input 2.3s forwards ease-in-out;
+}
+@keyframes input {
+  0% { width: 0; }
+  10% { width: 0px;}
+  100% { width: 757px;}
+}
+
+.button-form{
+  width: 757px;
+}
+
+.form-field{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
