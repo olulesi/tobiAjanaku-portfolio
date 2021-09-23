@@ -5,17 +5,16 @@ import { faLinkedinIn, faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
 
 // import draft from '../images/bubbleImages/textFormat.jpg'
-import tblogo from '../images/bubbleImages/tbLogoIcon.png'
-import line1 from '../images/bubbleImages/line1.png'
-import line2 from '../images/bubbleImages/line2.png'
-import line3 from '../images/bubbleImages/line3.png'
-import line4 from '../images/bubbleImages/line4.png'
-import line5 from '../images/bubbleImages/line5.png'
-// import typingBubble from '../images/bubbleImages/bubbleTyping.png'
+import tblogo from '../images/landingPageImages/bubbleImages/tbLogoIcon.png'
+import line1 from '../images/landingPageImages/bubbleImages/line1.png'
+import line2 from '../images/landingPageImages/bubbleImages/line2.png'
+import line3 from '../images/landingPageImages/bubbleImages/line3.png'
+import line4 from '../images/landingPageImages/bubbleImages/line4.png'
+import line5 from '../images/landingPageImages/bubbleImages/line5.png'
 
 import Tilt from 'react-parallax-tilt'
 
-import TAWhite from '../images/TAwhite.png'
+import TAWhite from '../images/landingPageImages/TAwhite.png'
 // import TABlack from '../images/TABlack.png'
 
 

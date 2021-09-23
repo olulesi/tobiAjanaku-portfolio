@@ -1,6 +1,4 @@
 import React from 'react'
-import logo from '../images/logo.png'
-import bkImg from '../images/Desktop.jpg'
 import dam from '../images/mainImages/damStreets.jpeg'
 import tog from '../images/mainImages/femme.jpeg'
 import hand from '../images/mainImages/hand.jpeg'
@@ -28,12 +26,10 @@ function Mouse() {
 
     <>
       <header className="main-body">
-        <div className="container1" style={{ 
-          backgroundImage: `url(${bkImg})`,
-        }}>
+        <div className="container1">
           <div className="details">
             <div className="logo-wrapper">
-              <img src={logo} alt="Brand Logo" />
+              <img alt="Brand Logo" />
             </div>
             <div className="message-wrapper">
               <p>
