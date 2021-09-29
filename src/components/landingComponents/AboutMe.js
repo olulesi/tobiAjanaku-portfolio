@@ -1,13 +1,13 @@
 import React from 'react'
 
-import uol from '../images/landingPageImages/iconsGifs/UoL.png'
-import write from '../images/landingPageImages/iconsGifs/intro-write.gif'
-import arch from '../images/landingPageImages/iconsGifs/intro-arch.gif'
-import art from '../images/landingPageImages/iconsGifs/intro-art.gif'
-import gd from '../images/landingPageImages/iconsGifs/intro-gd.gif'
-import fiver from '../images/landingPageImages/iconsGifs/Fiverr.png'
-import adobe from '../images/landingPageImages/iconsGifs/Adobe.png'
-import wordPress from '../images/landingPageImages/iconsGifs/Wordpress.png'
+import uol from '../../images/landingPageImages/iconsGifs/UoL.png'
+import write from '../../images/landingPageImages/iconsGifs/intro-write.gif'
+import arch from '../../images/landingPageImages/iconsGifs/intro-arch.gif'
+import art from '../../images/landingPageImages/iconsGifs/intro-art.gif'
+import gd from '../../images/landingPageImages/iconsGifs/intro-gd.gif'
+import fiver from '../../images/landingPageImages/iconsGifs/Fiverr.png'
+import adobe from '../../images/landingPageImages/iconsGifs/Adobe.png'
+import wordPress from '../../images/landingPageImages/iconsGifs/Wordpress.png'
 
 function AboutMe() {
 

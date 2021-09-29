@@ -1,15 +1,15 @@
 import React from 'react'
 
-import hand from '../images/mainImages/hand.jpeg'
-import damned from '../images/mainImages/damned.jpeg'
-import pod from '../images/mainImages/interior.jpeg'
-import garden from '../images/mainImages/garden.jpeg'
+import hand from '../images/landingPageImages/mainImages/hand.jpeg'
+import damned from '../images/landingPageImages/mainImages/damned.jpeg'
+import pod from '../images/landingPageImages/mainImages/interior.jpeg'
+import garden from '../images/landingPageImages/mainImages/garden.jpeg'
 
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
 
-import Footer from './Footer'
+import Footer from './landingComponents/Footer'
 
 function LandingPage() {
 

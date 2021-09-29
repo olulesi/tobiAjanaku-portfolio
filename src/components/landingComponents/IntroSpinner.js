@@ -1,5 +1,5 @@
 import React from 'react'
-import MainIntro from '../images/landingPageImages/intro.gif'
+import MainIntro from '../../images/landingPageImages/intro.gif'
 
 function IntroSpinner() {
 

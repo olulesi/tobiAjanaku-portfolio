@@ -1,14 +1,14 @@
 import React from 'react'
 import Footer from './Footer'
 
-import damStreet from '../images/landingPageImages/mainImages/damStreets.jpeg'
-import tog from '../images/landingPageImages/mainImages/femme.jpeg'
-import hand from '../images/landingPageImages/mainImages/hand.jpeg'
-import damned from '../images/landingPageImages/mainImages/damned.jpeg'
-import pod from '../images/landingPageImages/mainImages/interior.jpeg'
-import garden from '../images/landingPageImages/mainImages/garden.jpeg'
+import damStreet from '../../images/landingPageImages/mainImages/damStreets.jpeg'
+import tog from '../../images/landingPageImages/mainImages/femme.jpeg'
+import hand from '../../images/landingPageImages/mainImages/hand.jpeg'
+import damned from '../../images/landingPageImages/mainImages/damned.jpeg'
+import pod from '../../images/landingPageImages/mainImages/interior.jpeg'
+import garden from '../../images/landingPageImages/mainImages/garden.jpeg'
 
-import tobi from '../images/landingPageImages/tobiajanaku.png'
+import tobi from '../../images/landingPageImages/tobiajanaku.png'
 
 import AOS from 'aos'
 import 'aos/dist/aos.css'
