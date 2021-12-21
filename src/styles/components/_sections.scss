@@ -1,0 +1,62 @@
+.section-container{
+  scroll-snap-type: y mandatory;
+  scroll-snap-stop: always;
+  overflow-y: scroll;
+  height: 100vh;
+  background: white;
+  // -ms-overflow-style: none;
+  // scrollbar-width: none;
+  color: black;
+}
+
+
+.section-container::-webkit-scrollbar {
+  display: none;
+}
+
+.sections{
+  display: flex;
+  scroll-snap-align: start;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.s-one{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.s-two{
+  background: rgb(211, 79, 79);
+}
+.s-three{
+  background: rgb(36, 164, 138);
+}
+.s-four{
+  background: rgb(67, 91, 175);
+}
+.s-five{
+  background: rgb(211, 79, 79);
+}
+.s-six{
+  background: rgb(36, 164, 138);
+}
+.s-seven{
+  background: rgb(67, 91, 175);
+}
+.s-eight{
+  background: rgb(101, 145, 32);
+}
+.s-nine{
+  background: rgb(184, 113, 31);
+}
+.s-ten{
+  background: rgb(194, 63, 165);
+}
+.s-eleven{
+  background: rgb(204, 68, 79);
+}

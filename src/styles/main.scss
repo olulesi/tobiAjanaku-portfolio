@@ -5,7 +5,11 @@
 @import '../styles/landingStyles/finalPage.scss';
 @import '../styles/landingStyles/bubbles.scss';
 @import '../styles/landingStyles/footer.scss';
+@import '../styles/components/sections';
+@import '../styles/components/navBar';
 @import '~bulma/bulma.sass';
+@import './variables.scss';
+
 // @import 'aos/dist/aos.css';
 
 @font-face{
@@ -21,4 +25,6 @@ body{
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
