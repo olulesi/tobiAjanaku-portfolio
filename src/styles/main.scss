@@ -7,8 +7,9 @@
 @import '../styles/landingStyles/footer.scss';
 @import '../styles/components/sections';
 @import '../styles/components/navBar';
+@import '../styles/components/moreInfo';
 @import '~bulma/bulma.sass';
-@import './variables.scss';
+// @import './variables.scss';
 
 // @import 'aos/dist/aos.css';
 
@@ -18,10 +19,10 @@
 }
 
 
-body{
-  margin: 0;
-  padding: 0;
-}
+// #root{
+//   margin: 0;
+//   padding: 0;
+// }
 
 * {
   box-sizing: border-box;

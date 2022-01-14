@@ -1,4 +1,20 @@
-$navHeight: 100px;
+$navHeight: 6rem;
+
+// colour pallette
+$dark: rgb(29,29,29);
+$light: #fff;
+$bg: rgb(244, 244, 255);
+$primary: rgb(162,162,246);
+
+// spacing
+$spacing-md: 16px;
+$spacing-lg: 32px;
+
+//border radius
+$borderRadius: 12px;
+
+// header height
+$headerHeight: 100px;
 
 @mixin breakpoint($point) {
   @if $point == md {

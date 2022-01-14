@@ -6,8 +6,8 @@ function CreativeRetrofit() {
   return (
     <>
       <div className='section-container'>
-        <section className='sections s-one'>
-          <NavBar />
+        <NavBar />
+        <section className='sections s-one'>  
           <h1>BITCH</h1>
         </section>
         <section className='sections s-two'>
@@ -34,12 +34,12 @@ function CreativeRetrofit() {
         <section className='sections s-nine'>
           <h1>BITCH</h1>
         </section>
-        <section className='sections s-ten'>
+        {/* <section className='sections s-ten'>
           <h1>BITCH</h1>
         </section>
         <section className='sections s-eleven'>
           <h1>BITCH</h1>
-        </section>
+        </section> */}
       </div>
     </>
   )

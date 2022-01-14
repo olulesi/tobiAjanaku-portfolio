@@ -1142,6 +1142,11 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
+"@coreui/icons-react@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@coreui/icons-react/-/icons-react-2.0.1.tgz#b5246abb50e8c3d853f70ab43f67a69a94dde804"
+  integrity sha512-532DYj/b+YeSXfvLLK1FoH6uBMCWdNuxzQe+zQF8NQRFT869Zt6VnbLKNwObxZLUMXwwyATbku8Dw4Cdm0eqiQ==
+
 "@csstools/convert-colors@^1.4.0":
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
@@ -1479,6 +1484,11 @@
     native-url "^0.2.6"
     schema-utils "^2.6.5"
     source-map "^0.7.3"
+
+"@react-icons/all-files@^4.1.0":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@react-icons/all-files/-/all-files-4.1.0.tgz#477284873a0821928224b6fc84c62d2534d6650b"
+  integrity sha512-hxBI2UOuVaI3O/BhQfhtb4kcGn9ft12RWAFVMUeNjqqhLsHvFtzIkFaptBJpFDANTKoDfdVoHTKZDlwKCACbMQ==
 
 "@rollup/plugin-node-resolve@^7.1.1":
   version "7.1.3"
