@@ -8,20 +8,28 @@ import TALogo from '../../images/logos/ta.png'
 function NavBar() {
 
   const [menuOpen, setMenuOpen] = React.useState(false)
+  const [outro, setOutro] = React.useState(false)
+
+  React.useEffect(() => {
+    setOutro(false)
+    console.log(outro)
+  },[])
 
   const menuToggleHandler = () => {
     setMenuOpen(p =>!p)
+    setOutro(true)
   }
 
 
-  console.log(setMenuOpen)
+  // console.log(menuOpen)
+  // console.log(outro)
   return (
 
     <>
       <header className='nav-header'>
         <div className='nav-content'>
           <img src={TALogo} alt="Tobi Ajanaku" />
-          <nav className={`nav-toggle-content startMenu ${menuOpen ? 'isMenu' : ''}`}>
+          <nav className={`nav-toggle-content startMenu ${menuOpen ? 'isMenu' : `${outro ? 'noMenu' : ''}`}`}>
             <ul>
               <li>
                 <a href='/'>Home</a>
