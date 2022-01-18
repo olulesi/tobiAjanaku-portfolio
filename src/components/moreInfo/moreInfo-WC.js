@@ -19,8 +19,8 @@ function MoreInfo() {
             <AiFillFolder onClick={showSidebar} />
           </Link>
         </div>
-        <nav className={sidebar ? 'info-menu active' : 'info-menu'}>
-          <ul className='info-menu-items'>
+        <nav className={sidebar ? 'info-menu live' : 'info-menu'}>
+          <ul className='info-menu-items' onClick={showSidebar}>
             <li className='moreInfo-toggle'>
               <Link to='#' className='moreInfo-button'>
                 <AiOutlineClose />

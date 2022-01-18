@@ -1,16 +1,17 @@
 import React from 'react'
 import NavBar from '../../navBar/nB-index'
 import MoreInfo from '../../moreInfo/moreInfo-WC'
+import Title from './sections/title'
 
 function WellnessCentre() {
 
   return (
     <>
       <div className='section-container'>
-        <NavBar />
-        <section className='sections s-one'>
+        <NavBar />  
+        <section className='sections'>
+          <Title />
           <MoreInfo />
-          <h1>BITCH</h1>
         </section>
         <section className='sections s-two'>
           <h1>BITCH</h1>

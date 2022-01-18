@@ -17,20 +17,5 @@ export const moreInfoData = [
     title: 'Home',
     image: garden,
     cName: 'moreInfo-text',
-  },
-  {
-    title: 'Home',
-    image: garden,
-    cName: 'moreInfo-text',
-  },
-  {
-    title: 'Home',
-    image: garden,
-    cName: 'moreInfo-text',
-  },
-  {
-    title: 'Home',
-    image: garden,
-    cName: 'moreInfo-text',
   }
 ]
