@@ -2,9 +2,11 @@
 
 .moreInfo-container{
   // width: 100%;
+  position: absolute;
   height: 100vh;
   display: flex;
   justify-content: flex-end;
+  right: 0;
   .moreInfo{
     height: 100vh;
     display: flex;

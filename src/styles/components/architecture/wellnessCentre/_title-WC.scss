@@ -2,11 +2,55 @@
 
 .s-one{
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  // align-items: center;
   width: 100%;
+  height: 100vh;
 }
 
-// .title-container{
-//   width: 500px;
-// }
+.title-container{
+  // background: url('../../../../images/architectureImages/wcImages/mainEntrance.png');
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include breakpoint(md) {
+    height: max-content;
+    max-width: 60%;
+    margin: 0 auto;
+}
+.title-content{
+  position: absolute;
+  bottom: 65%;
+  font: 8.5rem $heading-font-family;
+  letter-spacing:$heading-spacing;
+}
+  img{
+    height: 100%;
+    object-fit: cover;
+    @include breakpoint(md) {
+      min-height: 40rem;
+  }
+    @include breakpoint(lg) {
+      max-height: 43rem;
+      // min-width: 1200px;
+  }
+  }
+}
+
+.pageName{
+    display: none;
+  @include breakpoint(md) {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 5rem;
+    padding-top: 3rem;
+  }
+  h6{
+    
+  }
+  // height: 100%;
+}

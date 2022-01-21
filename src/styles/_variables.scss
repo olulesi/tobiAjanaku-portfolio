@@ -1,5 +1,10 @@
 $navHeight: 6rem;
 
+//fonts
+$heading-font-family: FogtwoNo5;
+$heading-spacing:  -0.7rem;
+
+
 // colour pallette
 $dark: rgb(29,29,29);
 $light: #fff;
@@ -20,6 +25,11 @@ $headerHeight: 100px;
   @if $point == md {
     //768px
     @media (min-width: 48em) {
+      @content;
+    }
+  }
+  @if $point == lg {
+    @media (min-width: 68rem) {
       @content;
     }
   }
