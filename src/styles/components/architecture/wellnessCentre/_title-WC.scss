@@ -7,6 +7,8 @@
   justify-content: center;
   width: 100%;
   height: 100vh;
+  position: relative;
+  z-index: 1;
 }
 
 .title-container{
@@ -41,16 +43,14 @@
 
 .pageName{
     display: none;
+    // z-index: 0;
   @include breakpoint(md) {
-    position: relative;
+    // position: relative;
     width: 100%;
     display: flex;
     justify-content: center;
     height: 5rem;
     padding-top: 3rem;
-  }
-  h6{
-    
   }
   // height: 100%;
 }

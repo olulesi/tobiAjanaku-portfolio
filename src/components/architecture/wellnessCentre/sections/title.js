@@ -4,6 +4,7 @@ import mainImg from '../../../../images/architectureImages/wcImages/mainEntrance
 
 function Title() {
 
+
   return (
     <>
       <div className='s-one'>

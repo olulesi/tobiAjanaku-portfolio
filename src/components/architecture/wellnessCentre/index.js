@@ -2,6 +2,7 @@ import React from 'react'
 import NavBar from '../../navBar/nB-index'
 import MoreInfo from '../../moreInfo/moreInfo-WC'
 import Title from './sections/title'
+import Concept from './sections/concept'
 
 function WellnessCentre() {
 
@@ -13,8 +14,8 @@ function WellnessCentre() {
           <Title />
           <MoreInfo />
         </section>
-        <section className='sections s-two'>
-          <h1>BITCH</h1>
+        <section className='sections'>
+          <Concept />
         </section>
         <section className='sections s-three'>
           <h1>BITCH</h1>

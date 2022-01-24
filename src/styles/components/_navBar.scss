@@ -5,6 +5,7 @@
   height: $navHeight;
   width: 100%;
   padding: 0 1.5rem;
+  z-index: 2;
   @include breakpoint(md) {
     padding: 0 3rem;
   }
