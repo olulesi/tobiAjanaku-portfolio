@@ -8,7 +8,7 @@ function Concept() {
     {
       id: 0,
       image: conceptImg,
-      title: 'Concept Strategy',
+      title: 'Concept  Strategy',
       content: 'Co-living, a modern day concept that aims to achieve sustainable and affordable ways of living. I wanted to target this co-living scheme towards creative university students and young adults that have started work within the creative field.',
     }
   ]
@@ -22,15 +22,17 @@ function Concept() {
             <div className='concept-image'>
               <img src={concept.image} />
             </div>
-            <div className='concept-title'>
-              <h2>{concept.title}</h2>
-            </div>
-            <div className='concept-text'>
-              <p>{concept.content}</p>
+            <div className='concept-content'>
+              <div className='concept-title'>
+                <h2>{concept.title}</h2>
+              </div>
+              <div className='concept-text'>
+                <p>{concept.content}</p>
+              </div>
             </div>
           </div>
         ))}
-        <footer className='pageName'>
+        <footer className='pageName s-two-footer'>
           <h6>Wellness Centre</h6>
         </footer>
       </div>

@@ -33,4 +33,9 @@ $headerHeight: 100px;
       @content;
     }
   }
+  @if $point == xl {
+    @media (min-width: 94rem) {
+      @content;
+    }
+  }
 }

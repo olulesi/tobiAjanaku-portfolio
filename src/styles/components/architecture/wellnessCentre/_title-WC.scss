@@ -24,9 +24,13 @@
 }
 .title-content{
   position: absolute;
-  bottom: 65%;
-  font: 8.5rem $heading-font-family;
-  letter-spacing:$heading-spacing;
+  bottom: 70%;
+  letter-spacing:-0.4rem;
+  font: 4.3rem $heading-font-family;
+  @include breakpoint(md) {
+    font: 8.5rem $heading-font-family;
+    bottom: 65%;
+}
 }
   img{
     height: 100%;

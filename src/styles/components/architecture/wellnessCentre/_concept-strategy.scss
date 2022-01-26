@@ -3,4 +3,80 @@
 
 .s-two{
   background: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
+.concept-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  height: 80%;
+  // margin-bottom: rem;
+  @include breakpoint(md) {
+    width: 100%;
+    height: 550px;
+    margin-bottom: 10rem;
+    justify-content: center;
+}
+  .concept-image{
+   margin-top: 3.5rem;
+    height: 300px;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // max-height: 60%;
+    // height: 500px;
+    // width: 630px;
+    @include breakpoint(md) {
+      width: 100%;
+      height: 550px;
+  }
+  //   @include breakpoint(lg) {
+  //     height: max-content;
+  //     max-width: 80%;
+  //     margin: 0 auto;
+  // }
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .concept-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 43%;
+    @include breakpoint(md) {
+      top: 80%;
+  }
+    .concept-title{
+      font-size: 2rem;
+      font-family: $heading-font-family;
+      letter-spacing: -0.2rem;
+      margin-bottom: 0.5rem;
+    }
+    .concept-text{
+      text-align: center;
+      width: 85%;
+      margin: 0 auto;
+      font-size: 1.1rem;
+      line-height: 1.3rem;
+      @include breakpoint(md) {
+        width: 50%;
+    }
+    }
+  }
+}
+
+.s-two-footer{
+  display: flex;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+
