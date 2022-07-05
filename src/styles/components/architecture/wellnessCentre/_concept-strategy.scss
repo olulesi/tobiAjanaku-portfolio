@@ -50,25 +50,31 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: absolute;
-    top: 43%;
+    // position: absolute;
+    top: 56%;
     @include breakpoint(md) {
-      top: 80%;
+      position: relative;
+      top: -10%;
   }
     .concept-title{
-      font-size: 2rem;
+      font-size: 1.7rem;
       font-family: $heading-font-family;
-      letter-spacing: -0.2rem;
+      letter-spacing: -0.1rem;
       margin-bottom: 0.5rem;
+      @include breakpoint(md) {
+        font-size: 2rem;
+        letter-spacing: -0.2rem;
+      }
     }
     .concept-text{
       text-align: center;
       width: 85%;
       margin: 0 auto;
-      font-size: 1.1rem;
+      font-size: 1rem;
       line-height: 1.3rem;
       @include breakpoint(md) {
         width: 50%;
+        font-size: 1.1rem;
     }
     }
   }
