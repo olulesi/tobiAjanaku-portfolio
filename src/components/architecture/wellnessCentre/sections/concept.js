@@ -1,6 +1,8 @@
 import React from 'react'
 import conceptImg from '../../../../images/architectureImages/wcImages/ConceptStrategy.png'
-
+import { Container } from '@chakra-ui/react'
+import { Grid, GridItem } from '@chakra-ui/react'
+import { Box, Heading, Text } from '@chakra-ui/react'
 
 function Concept() {
 
@@ -17,9 +19,41 @@ function Concept() {
     <>
       <div className='s-two'>
         {conceptStrategy.map((concept) => (
-          <div
-            className="concept-container" key={concept.id}>
-            <div className='concept-image'>
+
+          <Container h='100%' w='100%' bg='green.400' key={concept.id}>
+            {/* <VStack>
+              <Box h='40px' bg='yellow.200'>
+                1
+              </Box>
+              <Box p={5}>
+                <Heading fontSize='xl'>{concept.title}</Heading>
+                <Text mt={4}>{concept.content}</Text>
+              </Box>
+              <Box h='40px' bg='pink.100'>
+                Wellness Centre
+              </Box>
+            </VStack> */}
+            <Grid
+              h='100%'
+              w='100%'
+              templateRows='repeat(6, 2fr)'
+              templateColumns='repeat(5, 1fr)'
+              gap={4}
+            >
+              <GridItem rowSpan={3} colSpan={5} bg='tomato'>
+                <img src={concept.image} />
+              </GridItem>
+              <GridItem rowSpan={2} colSpan={5} bg='papayawhip'>
+                <Box p={5}>
+                  <Heading fontSize='xl'>{concept.title}</Heading>
+                  <Text mt={4}>{concept.content}</Text>
+                </Box>
+              </GridItem>
+              <GridItem rowSpan={1} colSpan={5} bg='tomato'>
+                Wellness Centre
+              </GridItem>
+            </Grid>
+            {/* <div className='concept-image'>
               <img src={concept.image} />
             </div>
             <div className='concept-content'>
@@ -29,12 +63,12 @@ function Concept() {
               <div className='concept-text'>
                 <p>{concept.content}</p>
               </div>
-            </div>
-          </div>
+            </div> */}
+            {/* <footer className='pageName s-two-footer'>
+              <h6>Wellness Centre</h6>
+            </footer> */}
+          </Container>
         ))}
-        <footer className='pageName s-two-footer'>
-          <h6>Wellness Centre</h6>
-        </footer>
       </div>
     </>
   )
