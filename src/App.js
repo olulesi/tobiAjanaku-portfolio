@@ -5,6 +5,7 @@ import Main from './components/Main'
 import PageScroll from './components/landingComponents/PageScroll'
 import WellnessCentre from './components/architecture/wellnessCentre/index'
 import CreativeRetrofit from './components/architecture/creativeRetrofit/index'
+import Arusha from './components/tanzania/Arusha'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route exact path="/" component={PageScroll} />
         <Route exact path="/architecture/wellnessCentre" component={WellnessCentre} />
         <Route exact path="/architecture/creativeRetrofit" component={CreativeRetrofit} />
+        <Route exact path="/tanzania" component={Arusha} />
       </Switch>
     </BrowserRouter>
     
