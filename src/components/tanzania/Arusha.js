@@ -11,7 +11,7 @@ import UmPlayground from './UmPlayground'
 import Chapter2 from './Chapter2'
 
 //videos
-import AmothersPrayer from '../../images/tanzaniaVideos/AmothersPrayer.mov'
+// import AmothersPrayer from '../../images/tanzaniaVideos/AmothersPrayer.mov'
 // import convoAtTheHub from '../../images/tanzaniaVideos/convoAtTheHub.mov'
 import Initiation from '../../images/tanzaniaVideos/initiation.mov'
 
@@ -24,9 +24,9 @@ function CreativeRetrofit() {
     <>
       <div className="section-container">
         <div className="section-container">
-          <section className="sections">
+          {/* <section className="sections">
             <UmVideo content={AmothersPrayer} />
-          </section>
+          </section> */}
           <section className="sections">
             <Orientation />
           </section>
