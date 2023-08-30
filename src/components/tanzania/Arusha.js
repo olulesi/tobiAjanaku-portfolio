@@ -1,5 +1,5 @@
 import React from 'react' // import NavBar from '../navBar/nB-index'
-import UmVideo from './UmVideo'
+// import UmVideo from './UmVideo'
 import Orientation from './Orientation'
 import Breakdown from './Breakdown'
 import Overview from './Overview'
@@ -13,7 +13,7 @@ import Chapter2 from './Chapter2'
 //videos
 // import AmothersPrayer from '../../images/tanzaniaVideos/AmothersPrayer.mov'
 // import convoAtTheHub from '../../images/tanzaniaVideos/convoAtTheHub.mov'
-import Initiation from '../../images/tanzaniaVideos/initiation.mov'
+// import Initiation from '../../images/tanzaniaVideos/initiation.mov'
 
 
 
@@ -39,9 +39,9 @@ function CreativeRetrofit() {
           `<section className="sections">
             <Timetable />
           </section>`
-          `<section className="sections vid">
+          {/* `<section className="sections vid">
             <UmVideo content={Initiation} />
-          </section>`
+          </section>` */}
           `<section className="sections">
             <UmTeam />
           </section>`
