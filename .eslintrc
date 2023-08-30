@@ -15,10 +15,14 @@
   "parser": "@babel/eslint-parser",
   "parserOptions": {
     "sourceType": "module",
+    "requireConfigFile": false,
     "ecmaVersion": 7,
     "ecmaFeatures": {
       "jsx": true
-    }
+    },
+    "babelOptions": {
+      "presets": ["@babel/preset-react"]
+   }
   },
   "rules": {
     "brace-style": "error",
