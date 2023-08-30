@@ -25,6 +25,10 @@
     margin: 0;
   }
 
+  .vid{
+    background-color: black;
+  }
+
   .dots-container{
     background-image: url(../../images/tanzaniaImages/dots.png);
     background-size: cover;
@@ -71,10 +75,113 @@
     background-size: cover;
     // background-size: contain;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 100%;
     width: 100%;
+    display: flex;
+    justify-content: flex-end;
   }
 
+  .umojaText-container{
+    // position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: white;
+    margin-right: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    p{
+       margin: 20% 17%;
+       font-size: 14px;  
+    }
+  }
+
+  .timetable{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .timetable-container{
+    display: flex;
+  }
+
+
+  .umTimetable-container{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    img{
+        height: 80%;
+        width: 80%;
+        object-fit: contain;
+    }   // top: 0%;
+  }
+
+  .umTeam{
+    background-image: url(../../images/tanzaniaImages/umTeam.png);
+  }
+
+  .umFarm{
+    background-image: url(../../images/tanzaniaImages/umfarm.png);
+  }
+
+  .umSchool{
+    background-image: url(../../images/tanzaniaImages/umSchool.png);
+  }
+
+  .umPlayground{
+    background-image: url(../../images/tanzaniaImages/umPlayground.png);
+  }
+
+
+
+  // ALL VIDEOS
+
+  video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+
+  .video-wrapper{
+    
+    width: 100%;
+    // max-width: 700px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  button{
+    background: none;
+    border: none;
+    color: white;
+    padding: 0;
+    
+    font-size: 1.1rem;
+  }
+
+  .mute-btn{
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    height: 30px;
+    width: 30px;
+  }
+
+  .togglePlay-container{
+    position: absolute;
+    top: 45%;
+    height: 80px;
+    width: 80px;
+    
+  }
 
   @media (min-width: 80em) {
 
