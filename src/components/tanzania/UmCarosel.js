@@ -1,33 +1,15 @@
 import React from 'react'
-import classRoom from '../../images/tanzaniaImages/classRoom.png'
-import chiefMeet from '../../images/tanzaniaImages/chiefMeet.png'
-import Concrete from '../../images/tanzaniaImages/Concrete.png'
-import highfive from '../../images/tanzaniaImages/highfive.png'
+// import masaiBomba from '../../images/tanzaniaImages/masaiBomba.png'
+// import bombaDrawing from '../../images/tanzaniaImages/bombaDrawing.png'
+// import bombaKitchen from '../../images/tanzaniaImages/bombaKitchen.png'
+// import bomaWindow from '../../images/tanzaniaImages/bomaWindow.png'
+// import bomaPartition from '../../images/tanzaniaImages/bomaPartition.png'
+// import bomaRoad from '../../images/tanzaniaImages/bomaRoad.png'
+// import bomaBedroom from '../../images/tanzaniaImages/bomaBedroom.png'
 
 // import { useRef } from 'react'
 
-function UmCarosel() {
-
-  const caroselCards = [
-    {
-      url: classRoom,
-      id: 1,
-    },
-    {
-      url: chiefMeet,
-      id: 2,
-    },
-    {
-      url: Concrete,
-      id: 3,
-    },
-    {
-      url: highfive,
-      id: 4,
-    }
-
-  ]
-
+function UmCarosel(props) {
   //   const targetRef = useRef < HTMLDivElement | null > (null)
   //   const { scrollYProgress } = useScroll({
   //     target: targetRef,
@@ -39,12 +21,20 @@ function UmCarosel() {
     <>
       <div className='carosel-container'>
         <div className='card-container'>
-          {caroselCards.map((card) => (
+          {props.content.map((card) => (
             <div
+              style={{
+                backgroundImage: `url(${card.url})`,
+              }}
               key={card.index}
-              className='cardImg'
+              className='cardImg umoja-container'
             >
-              <img src={card.url} alt='' />
+              {/* <img src={card.url} alt='' /> */}
+              <div className={`${card.text === 'none' ? 'container-hide' : 'umojaText-container timetable'} `}>
+                <p>
+                  {card.text}
+                </p>
+              </div> 
             </div>
           )
           )}

@@ -36,6 +36,8 @@
     background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
+    display: flex;
+    align-items: center;
   }
 
   .breakdown-container{
@@ -50,9 +52,11 @@
   }
 
   .umImg-container{
-    width: 60%;
-    // height: 100%;
+    max-width: 60%;
+    height: 100%;
     img{
+        max-width: 100%;
+        height: 100%;
         object-fit: contain;
     }
   }
@@ -79,6 +83,10 @@
     width: 100%;
     display: flex;
     justify-content: flex-end;
+  }
+
+  .container-hide{
+    display: none;
   }
 
   .umojaText-container{
@@ -130,22 +138,14 @@
     align-items: center;
     justify-content: center; 
     img{
-        height: 80%;
-        width: 80%;
+        height: 70%;
+        width: 70%;
         object-fit: contain;
     }   // top: 0%;
   }
 
-  .umTeam{
-    background-image: url(../../images/tanzaniaImages/umTeam.png);
-  }
-
   .umFarm{
     background-image: url(../../images/tanzaniaImages/umfarm.png);
-  }
-
-  .umSchool{
-    background-image: url(../../images/tanzaniaImages/umSchool.png);
   }
 
   .umPlayground{
