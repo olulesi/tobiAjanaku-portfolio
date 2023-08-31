@@ -69,7 +69,7 @@ function UmVideo(props) {
   }, [muted, videoElement])
   return (
     <>
-      <div>
+      <div className='umVideo-container'>
         <div className='video-wrapper'>
           <video
             src={props.content} 
