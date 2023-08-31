@@ -2,12 +2,11 @@ import React from 'react'
 import UmVideo from './UmVideo'
 import Diagram from './Diagram'
 import School from './School'
-import Orientation from './Orientation'
 import UmCarosel from './UmCarosel'
 import UmImage from './UmImage'
 
 // videos & images
-import meetingMaasai from '../../images/tanzaniaVideos/meetingMaasai.mp4'
+import meetingMaasai from '../../images/tanzaniaVideos/meetingMaasai.mov'
 import waterBuilders from '../../images/tanzaniaImages/waterBuilders.png'
 import siteAnalysis from '../../images/tanzaniaImages/siteAnalysis.png'
 import chiefMeet from '../../images/tanzaniaImages/chiefMeet.png'
@@ -16,6 +15,9 @@ import highfive from '../../images/tanzaniaImages/highfive.png'
 import chiefDrawing from '../../images/tanzaniaImages/chiefDrawing.png'
 import bubblesOverview from '../../images/tanzaniaImages/bubblesOverview.png'
 import bubblesFindings from '../../images/tanzaniaImages/bubblesFindings.png'
+import interviewBubble from '../../images/tanzaniaImages/interviewBubble.png'
+import chiefDrawingBubble from '../../images/tanzaniaImages/chiefDrawingBubble.png'
+import chiefDrawingBubble2 from '../../images/tanzaniaImages/chiefDrawingBubble2.png'
 import elebereki from '../../images/tanzaniaVideos/elebereki.mov'
 
 
@@ -28,7 +30,7 @@ import bomaPartition from '../../images/tanzaniaImages/bomaPartition.png'
 import bomaRoad from '../../images/tanzaniaImages/bomaRoad.png'
 import bomaBedroom from '../../images/tanzaniaImages/bomaBedroom.png'
 
-//carosel
+//carosel 2
 import modernBomaHouse from '../../images/tanzaniaImages/modernBomaHouse.png'
 import modernBomaPlan from '../../images/tanzaniaImages/modernBomaPlan.png'
 import modernBomaDoor from '../../images/tanzaniaImages/modernBomaDoor.png'
@@ -138,13 +140,13 @@ function Chapter2() {
         <School />
       </section>`
       <section className="sections">
-        <Orientation />
+        <Diagram content={interviewBubble} />
       </section>
       `<section className="sections">
         <UmImage content={Concrete} />
       </section>`
       <section className="sections">
-        <Orientation />
+        <Diagram content={chiefDrawingBubble} />
       </section>
       `<section className="sections">
         <UmImage content={highfive} />
@@ -153,7 +155,7 @@ function Chapter2() {
         <UmVideo content={elebereki} />
       </section>`
       `<section className="sections">
-        <Orientation />
+        <Diagram content={chiefDrawingBubble2} />
       </section>`
       `<section className="sections">
         <UmImage content={chiefDrawing} />

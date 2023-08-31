@@ -10,6 +10,7 @@ import UmPlayground from './UmPlayground'
 import Chapter2 from './Chapter2'
 import Diagram from './Diagram'
 import UmImage from './UmImage'
+import Chapter3 from './Chapter3'
 
 //videos
 import AmothersPrayer from '../../images/tanzaniaVideos/mothersPrayer.mov'
@@ -66,6 +67,7 @@ function CreativeRetrofit() {
             <UmVideo content={convoAtTheHub}/>
           </section>
           <Chapter2 />
+          <Chapter3 />
         </div>
       </div>
       

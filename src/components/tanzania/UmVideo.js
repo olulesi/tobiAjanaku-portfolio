@@ -72,7 +72,8 @@ function UmVideo(props) {
       <div className='umVideo-container'>
         <div className='video-wrapper'>
           <video
-            src={props.content} 
+            src={props.content}
+            type="video/mp4" 
             ref={videoElement}
             muted="muted"
             onClick={togglePlay}
