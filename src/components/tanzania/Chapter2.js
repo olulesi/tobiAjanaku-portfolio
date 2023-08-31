@@ -3,6 +3,7 @@ import UmVideo from './UmVideo'
 import Diagram from './Diagram'
 import School from './School'
 import Orientation from './Orientation'
+import UmCarosel from './UmCarosel'
 
 // videos
 import meetingMaasai from '../../images/tanzaniaVideos/meetingMaasai.mp4'
@@ -11,7 +12,8 @@ import classRoom from '../../images/tanzaniaImages/classRoom.png'
 import chiefMeet from '../../images/tanzaniaImages/chiefMeet.png'
 import Concrete from '../../images/tanzaniaImages/Concrete.png'
 import highfive from '../../images/tanzaniaImages/highfive.png'
-//images
+import chiefDrawing from '../../images/tanzaniaImages/chiefDrawing.png'
+import elebereki from '../../images/tanzaniaVideos/elebereki.mov'
 
 
 
@@ -45,6 +47,21 @@ function Chapter2() {
       `<section className="sections">
         <Diagram content={highfive} />
       </section>`
+      `<section className="sections">
+        <UmVideo content={elebereki} />
+      </section>`
+      `<section className="sections">
+        <Orientation />
+      </section>`
+      `<section className="sections">
+        <Diagram content={chiefDrawing} />
+      </section>`
+      `<section className="sections">
+        <UmCarosel />
+      </section>`
+      {/* `<section className="sections">
+        <Diagram content={chiefDrawing} />
+      </section>` */}
     </>
   )
 }
