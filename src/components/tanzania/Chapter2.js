@@ -124,51 +124,51 @@ function Chapter2() {
       <section className="sections">
         <UmVideo content={meetingMaasai} />
       </section>
-      `<section className="sections">
+      <section className="sections">
         <Diagram content={bubblesFindings} />
-      </section>`
+      </section>
       <section className="sections">
         <UmImage content={siteAnalysis}  />
-      </section>`
-      `<section className="sections">
+      </section>
+      <section className="sections">
         <UmImage content={waterBuilders} />
-      </section>`
-      `<section className="sections">
+      </section>
+      <section className="sections">
         <UmImage content={chiefMeet} />
-      </section>`
-      `<section className="sections">
+      </section>
+      <section className="sections">
         <School />
-      </section>`
+      </section>
       <section className="sections">
         <Diagram content={interviewBubble} />
       </section>
-      `<section className="sections">
+      <section className="sections">
         <UmImage content={Concrete} />
-      </section>`
+      </section>
       <section className="sections">
         <Diagram content={chiefDrawingBubble} />
       </section>
-      `<section className="sections">
+      <section className="sections">
         <UmImage content={highfive} />
-      </section>`
-      `<section className="sections">
+      </section>
+      <section className="sections">
         <UmVideo content={elebereki} />
-      </section>`
-      `<section className="sections">
+      </section>
+      <section className="sections">
         <Diagram content={chiefDrawingBubble2} />
-      </section>`
-      `<section className="sections">
+      </section>
+      <section className="sections">
         <UmImage content={chiefDrawing} />
-      </section>`
-      `<section className="sections">
+      </section>
+      <section className="sections">
         <UmCarosel content={bomaCarosel}/>
-      </section>`
-      `<section className="sections">
+      </section>
+      <section className="sections">
         <UmCarosel content={modernBoma} />
-      </section>`
-      `<section className="sections">
+      </section>
+      <section className="sections">
         <Diagram content={bubblesOverview} />
-      </section>`
+      </section>
     </>
   )
 }

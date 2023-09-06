@@ -3,7 +3,7 @@ import Diagram from './Diagram'
 import UmVideo from './UmVideo'
 import UmImage from './UmImage'
 
-import AmothersPrayer from '../../images/tanzaniaVideos/mothersPrayer.mov'
+import ChiefConfrontation from '../../images/tanzaniaVideos/ChiefConfrontation.mov'
 import bubblesRoles from '../../images/tanzaniaImages/bubblesRoles.png'
 import entranceDiagram from '../../images/tanzaniaImages/entranceDiagram.png'
 import RoofStreetDiagram from '../../images/tanzaniaImages/RoofStreetDiagram.png'
@@ -19,7 +19,7 @@ function Chapter3() {
         <Diagram content={bubblesRoles} />
       </section>
       <section className="sections">
-        <UmVideo content={AmothersPrayer} />
+        <UmVideo content={ChiefConfrontation} />
       </section>
       <section className="sections">
         <UmImage content={entranceDiagram} />

@@ -11,6 +11,7 @@ import Chapter2 from './Chapter2'
 import Diagram from './Diagram'
 import UmImage from './UmImage'
 import Chapter3 from './Chapter3'
+import PrePlacement from './PrePlacement'
 
 //videos
 import AmothersPrayer from '../../images/tanzaniaVideos/mothersPrayer.mov'
@@ -30,39 +31,40 @@ function CreativeRetrofit() {
     <>
       <div className="section-container">
         <div className="section-container">
+          <PrePlacement />
           <section className="sections">
             <UmVideo content={AmothersPrayer} />
           </section>
-          `<section className="sections">
+          <section className="sections">
             <Diagram content={bubblesWho} />
-          </section>`
+          </section>
           <section className="sections">
             <Breakdown />
           </section>
-          `<section className="sections">
+          <section className="sections">
             <Overview />
-          </section>`
-          `<section className="sections">
+          </section>
+          <section className="sections">
             <Timetable />
-          </section>`
-          `<section className="sections vid">
+          </section>
+          <section className="sections vid">
             <UmVideo content={Initiation} />
-          </section>`
-          `<section className="sections">
+          </section>
+          <section className="sections">
             <UmImage content={UmTeam} />
-          </section>`
-          `<section className="sections">
+          </section>
+          <section className="sections">
             <UmFarm />
-          </section>`
+          </section>
           <section className="sections">
             <UmImage content={UmSchool} />
           </section>
           <section className="sections">
             <UmPlayground />
           </section>
-          `<section className="sections">
+          <section className="sections">
             <Diagram content={bubblesRoles} />
-          </section>`
+          </section>
           <section className="sections">
             <UmVideo content={convoAtTheHub}/>
           </section>

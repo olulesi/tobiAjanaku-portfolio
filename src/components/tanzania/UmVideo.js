@@ -30,7 +30,7 @@ function UmVideo(props) {
   const [videoElement, isVisible] = useElementOnScreen({
     root: null,
     rootMargin: '0px',
-    threshold: 0,
+    threshold: 1.0,
   })
 
   console.log(isVisible)

@@ -1,3 +1,7 @@
+body{
+  overflow-x: hidden;
+}
+
 .section-container{
     scroll-snap-type: y mandatory;
     scroll-snap-stop: always;
@@ -25,9 +29,6 @@
     margin: 0;
   }
 
-  .vid{
-    background-color: black;
-  }
 
   .dots-container{
     background-image: url(../../images/tanzaniaImages/dots.png);
@@ -75,14 +76,14 @@
   }
 
   .umoja-container{
-    background-image: url(../../images/tanzaniaImages/umojaHQ.png);
-    background-size: cover;
-    // background-size: contain;
+    background-size: contain;
+    background-position: center center;
     background-repeat: no-repeat;
     height: 100%;
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    background-color: white;
   }
 
   .container-hide{
@@ -101,7 +102,7 @@
     text-align: justify;
     p{
        margin: 20% 17%;
-       font-size: 14px;  
+       font-size: 10px;  
     }
   }
 
@@ -117,7 +118,7 @@
     text-align: justify;
     p{
        margin: 20% 17%;
-       font-size: 14px;  
+       font-size: 12px;  
     }
   }
 
@@ -146,15 +147,23 @@
 
   .umFarm{
     background-image: url(../../images/tanzaniaImages/umfarm.png);
+    background-size: cover;
   }
 
   .umPlayground{
     background-image: url(../../images/tanzaniaImages/umPlayground.png);
+    background-size: cover;
   }
 
   .School{
     background-image: url(../../images/tanzaniaImages/school.png);
     justify-content: space-between;
+    background-size: cover;
+  }
+
+  .HQ{
+    background-image: url(../../images/tanzaniaImages/umojaHQ.png);
+    background-size: cover;
   }
 
 
@@ -168,7 +177,7 @@
     }
 
   .video-wrapper{
-    
+    background-color: black;
     width: 100%;
     height: 100%;
     // max-width: 700px;
@@ -233,6 +242,7 @@
 .cardImg{
   min-height: 100%;
   min-width: 100%;
+  
 
   img{
     width: 100%;
@@ -242,6 +252,21 @@
 
 
 
-  @media (min-width: 80em) {
+  @media (min-width: 81em) {
+    .umoja-container{
+      background-size: cover;
+    }
 
+    .umojaSchool-container{
+      p{
+        //  margin: 20% 17%;
+         font-size: 14px;  
+      }
+    }
+
+    .umojaText-container{
+      p{
+         font-size: 14px;  
+      }
+    }
   }
