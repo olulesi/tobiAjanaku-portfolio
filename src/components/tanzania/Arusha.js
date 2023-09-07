@@ -18,8 +18,8 @@ import AmothersPrayer from '../../images/tanzaniaVideos/mothersPrayer.mov'
 import convoAtTheHub from '../../images/tanzaniaVideos/convoAtTheHub2.mov'
 import Initiation from '../../images/tanzaniaVideos/initiation.mov'
 
-import bubblesWho from '../../images/tanzaniaImages/bubblesWho.png'
-import bubblesRoles from '../../images/tanzaniaImages/bubblesRoles.png'
+import questions from '../../images/tanzaniaImages/questions.png'
+import ngoRoles from '../../images/tanzaniaImages/ngoRoles.png'
 import UmTeam from '../../images/tanzaniaImages/umTeam.png'
 import UmSchool from '../../images/tanzaniaImages/umSchool.png'
 
@@ -36,7 +36,7 @@ function CreativeRetrofit() {
             <UmVideo content={AmothersPrayer} />
           </section>
           <section className="sections">
-            <Diagram content={bubblesWho} />
+            <Diagram content={questions} />
           </section>
           <section className="sections">
             <Breakdown />
@@ -63,7 +63,7 @@ function CreativeRetrofit() {
             <UmPlayground />
           </section>
           <section className="sections">
-            <Diagram content={bubblesRoles} />
+            <Diagram content={ngoRoles} />
           </section>
           <section className="sections">
             <UmVideo content={convoAtTheHub}/>

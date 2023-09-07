@@ -1,4 +1,4 @@
-import React from 'react' // import NavBar from '../navBar/nB-index'
+import React from 'react'
 import Diagram from './Diagram'
 
 import spatialPractice from '../../images/tanzaniaImages/spatialPracticeSummary.png'

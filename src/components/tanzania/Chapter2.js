@@ -13,11 +13,11 @@ import chiefMeet from '../../images/tanzaniaImages/chiefMeet.png'
 import Concrete from '../../images/tanzaniaImages/Concrete.png'
 import highfive from '../../images/tanzaniaImages/highfive.png'
 import chiefDrawing from '../../images/tanzaniaImages/chiefDrawing.png'
-import bubblesOverview from '../../images/tanzaniaImages/bubblesOverview.png'
-import bubblesFindings from '../../images/tanzaniaImages/bubblesFindings.png'
-import interviewBubble from '../../images/tanzaniaImages/interviewBubble.png'
-import chiefDrawingBubble from '../../images/tanzaniaImages/chiefDrawingBubble.png'
-import chiefDrawingBubble2 from '../../images/tanzaniaImages/chiefDrawingBubble2.png'
+import projectOverview from '../../images/tanzaniaImages/projectOverview.png'
+import findings from '../../images/tanzaniaImages/findings.png'
+import interview from '../../images/tanzaniaImages/interview.png'
+import whyConcrete from '../../images/tanzaniaImages/whyConcrete.png'
+import chiefDrawing2 from '../../images/tanzaniaImages/chiefDrawing2.png'
 import elebereki from '../../images/tanzaniaVideos/elebereki.mov'
 
 
@@ -125,7 +125,7 @@ function Chapter2() {
         <UmVideo content={meetingMaasai} />
       </section>
       <section className="sections">
-        <Diagram content={bubblesFindings} />
+        <Diagram content={findings} />
       </section>
       <section className="sections">
         <UmImage content={siteAnalysis}  />
@@ -140,13 +140,13 @@ function Chapter2() {
         <School />
       </section>
       <section className="sections">
-        <Diagram content={interviewBubble} />
+        <Diagram content={interview} />
       </section>
       <section className="sections">
         <UmImage content={Concrete} />
       </section>
       <section className="sections">
-        <Diagram content={chiefDrawingBubble} />
+        <Diagram content={whyConcrete} />
       </section>
       <section className="sections">
         <UmImage content={highfive} />
@@ -155,7 +155,7 @@ function Chapter2() {
         <UmVideo content={elebereki} />
       </section>
       <section className="sections">
-        <Diagram content={chiefDrawingBubble2} />
+        <Diagram content={chiefDrawing2} />
       </section>
       <section className="sections">
         <UmImage content={chiefDrawing} />
@@ -167,7 +167,7 @@ function Chapter2() {
         <UmCarosel content={modernBoma} />
       </section>
       <section className="sections">
-        <Diagram content={bubblesOverview} />
+        <Diagram content={projectOverview} />
       </section>
     </>
   )
