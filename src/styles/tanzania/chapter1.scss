@@ -92,7 +92,7 @@ html{
   }
 
   .umoja-container{
-    background-size: contain;
+    background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     height: 100%;
@@ -156,7 +156,7 @@ html{
     align-items: center;
     justify-content: center; 
     img{
-        padding: 10%;
+        padding: 14%;
         // height: 90vh;
         // width: 70%;
         // object-fit: contain;
@@ -322,3 +322,12 @@ html{
     }
 
   }
+
+  @media (max-width: 70em) {
+    .umoja-container{
+      background-size: contain;
+    }
+
+  }
+
+  
