@@ -41,9 +41,7 @@ html{
     justify-content: center;
     align-items: center;
     // padding: 2%;
-    img{
-    //  height: 100%; 
-    }
+   
   }
 
   .breakdown-container{
@@ -55,11 +53,11 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 0.7em;
+    font-size: 0.6em;
   }
 
   .joseph-container{
-    padding: 0 5%;
+    padding: 0 3%;
   }
 
   .umName{
@@ -84,8 +82,9 @@ html{
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     text-align: right;
+    padding: 10% 0 10% 0;
   }
 
   .right-side{
@@ -304,6 +303,22 @@ html{
       }   // top: 0%;
     }
 
+    .joseph-container{
+      padding: 0 10%;
+    }
+  
+    .umName{
+      font-size: 1.5em;
+      font-weight: 600;
+      letter-spacing: -0.1em;
+    }
+    .breakdown-container{
+      
+      font-size: 0.7em;
+    }
 
+    .leftSide-names{
+      padding: 3% 0 3% 0;
+    }
 
   }
